@@ -1,16 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbf7f1;
-  --foreground: #221c18;
-  --surface: rgba(255, 255, 255, 0.8);
-  --surface-strong: #fffdf9;
-  --muted: #6f6258;
-  --border: rgba(122, 101, 83, 0.16);
-  --beige: #efe2d3;
-  --taupe: #c9b7a4;
-  --gold: #af8459;
-  --shadow: 0 30px 80px -42px rgba(57, 42, 31, 0.28);
+  --background: #f7f1e8;
+  --background-top: #fcf8f2;
+  --background-bottom: #efe2d4;
+  --foreground: #201816;
+  --surface: rgba(255, 252, 247, 0.72);
+  --surface-strong: rgba(255, 251, 245, 0.92);
+  --surface-muted: rgba(247, 238, 228, 0.8);
+  --muted: #6b5e56;
+  --muted-soft: #8b7b71;
+  --border: rgba(97, 77, 62, 0.1);
+  --border-strong: rgba(97, 77, 62, 0.16);
+  --accent: #c7a27f;
+  --accent-deep: #a7805f;
+  --shadow-soft: 0 24px 60px -36px rgba(81, 57, 38, 0.18);
+  --shadow-card: 0 36px 80px -44px rgba(87, 62, 42, 0.2);
+  --shadow-glow: 0 12px 30px -18px rgba(255, 255, 255, 0.72) inset;
+  --radius-xl: 2rem;
+  --radius-2xl: 2.5rem;
+  --container: 1200px;
 }
 
 *,
@@ -25,23 +34,48 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.96), transparent 26%),
-    radial-gradient(circle at top right, rgba(245, 235, 223, 0.7), transparent 24%),
-    linear-gradient(180deg, #fdfaf5 0%, #f5eee6 52%, #fcfaf6 100%);
-  color: var(--foreground);
-  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
   min-height: 100vh;
   overflow-x: clip;
+  color: var(--foreground);
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 24%),
+    radial-gradient(circle at 85% 14%, rgba(247, 230, 210, 0.7), transparent 22%),
+    linear-gradient(180deg, var(--background-top) 0%, var(--background) 44%, var(--background-bottom) 100%);
 }
 
-h1, h2, h3, h4, h5, h6, .font-serif {
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.4), transparent 24%),
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.6), transparent 26%);
+  opacity: 0.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-serif {
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   overflow-wrap: anywhere;
 }
 
-p, a, li, input, textarea, button, summary, label, select {
+p,
+a,
+li,
+input,
+textarea,
+button,
+summary,
+label,
+select {
   font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
   overflow-wrap: anywhere;
 }
@@ -80,22 +114,71 @@ div {
 }
 
 ::selection {
-  background: rgba(175, 132, 89, 0.22);
+  background: rgba(199, 162, 127, 0.28);
 }
 
 summary::-webkit-details-marker {
   display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: auto;
+@utility shell {
+  margin-inline: auto;
+  width: 100%;
+  max-width: var(--container);
+  padding-inline: 1rem;
+}
+
+@utility glass-panel {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 251, 246, 0.8), rgba(248, 241, 232, 0.66));
+  box-shadow: var(--shadow-card), var(--shadow-glow);
+  backdrop-filter: blur(22px);
+}
+
+@utility section-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 252, 248, 0.88), rgba(247, 239, 231, 0.72));
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(16px);
+}
+
+@utility button-primary {
+  border-radius: 9999px;
+  background: #171312;
+  color: white;
+  transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+  box-shadow: 0 20px 40px -24px rgba(22, 17, 15, 0.6);
+}
+
+@utility button-secondary {
+  border-radius: 9999px;
+  border: 1px solid var(--border-strong);
+  background: rgba(255, 252, 248, 0.78);
+  color: var(--foreground);
+  transition: border-color 160ms ease, transform 160ms ease, background-color 160ms ease;
+  backdrop-filter: blur(12px);
+}
+
+@media (hover: hover) {
+  .button-primary:hover,
+  .button-secondary:hover {
+    transform: translateY(-1px);
+  }
+
+  .button-primary:hover {
+    background: #2a211f;
+  }
+
+  .button-secondary:hover {
+    border-color: rgba(32, 24, 22, 0.28);
+    background: rgba(255, 252, 248, 0.95);
   }
 }
 
-* {
-  animation: none !important;
-  transition-property: none !important;
-  transition-duration: 0s !important;
-  transition-delay: 0s !important;
+@media (max-width: 640px) {
+  :root {
+    --radius-xl: 1.65rem;
+    --radius-2xl: 2rem;
+  }
 }

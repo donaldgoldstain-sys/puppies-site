@@ -15,47 +15,47 @@ const locationLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="mt-20 border-t border-[var(--border)] bg-[linear-gradient(180deg,#f6efe7,#fbf8f3)]">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.2fr_0.9fr_1fr_1fr] lg:px-8">
-        <div className="space-y-4">
-          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-[var(--gold)]">Boutique Companion Brand</p>
-          <p className="font-serif text-3xl text-stone-900">{site.name}</p>
-          <p className="max-w-sm text-sm leading-7 text-[var(--muted)]">
-            A premium, curated home for teacup and micro Pomeranian puppies, centered in Miami Beach and thoughtfully serving families across Florida and select U.S. cities.
-          </p>
-        </div>
-        <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Quick Links</p>
-          <div className="space-y-3 text-sm text-stone-700">
-            {[...site.nav, { href: "/about" as Route, label: "About" }, { href: "/areas-we-serve" as Route, label: "Areas We Serve" }, { href: "/health-guarantee" as Route, label: "Health Guarantee" }].map((item) => (
-              <Link key={item.href} href={item.href} className="block hover:text-stone-950">
-                {item.label}
-              </Link>
-            ))}
+    <footer className="mt-24 px-3 pb-4 sm:px-5">
+      <div className="shell glass-panel rounded-[2rem] px-5 py-10 sm:px-8 lg:rounded-[2.6rem] lg:px-10 lg:py-12">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.9fr_1fr_1fr]">
+          <div className="space-y-4">
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.34em] text-[var(--accent-deep)]">Boutique Puppy Concierge</p>
+            <p className="font-serif text-3xl text-stone-950">{site.name}</p>
+            <p className="max-w-sm text-sm leading-7 text-[var(--muted)]">
+              A soft, curated home for teacup and micro Pomeranian puppies, centered in Miami Beach and thoughtfully serving families across Florida and select U.S. cities.
+            </p>
+          </div>
+          <div>
+            <p className="mb-4 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-[var(--muted-soft)]">Explore</p>
+            <div className="space-y-3 text-sm text-stone-700">
+              {[...site.nav, { href: "/about" as Route, label: "About" }, { href: "/areas-we-serve" as Route, label: "Areas We Serve" }, { href: "/health-guarantee" as Route, label: "Health Guarantee" }].map((item) => (
+                <Link key={item.href} href={item.href} className="block transition hover:text-stone-950">
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-4 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-[var(--muted-soft)]">Placement Cities</p>
+            <div className="grid gap-3 text-sm text-stone-700 sm:grid-cols-2 lg:grid-cols-1">
+              {locationLinks.map((href) => (
+                <Link key={href.href} href={href.href} className="block transition hover:text-stone-950">
+                  {href.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p className="mb-4 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-[var(--muted-soft)]">Contact</p>
+            <div className="space-y-3 text-sm leading-7 text-stone-700">
+              <p>{site.location}</p>
+              <p>{site.address}</p>
+              <p>{site.phone}</p>
+              <p>{site.email}</p>
+            </div>
           </div>
         </div>
-        <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">City Links</p>
-          <div className="grid gap-3 text-sm text-stone-700 sm:grid-cols-2 lg:grid-cols-1">
-            {locationLinks.map((href) => (
-              <Link key={href.href} href={href.href} className="block hover:text-stone-950">
-                {href.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <div>
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-stone-500">Main Contact</p>
-          <div className="space-y-3 text-sm text-stone-700">
-            <p>{site.location}</p>
-            <p>{site.address}</p>
-            <p>{site.phone}</p>
-            <p>{site.email}</p>
-          </div>
-        </div>
-      </div>
-      <div className="border-t border-[var(--border)] px-4 py-6 text-center text-sm text-stone-500">
-        © 2026 {site.name}. All rights reserved.
+        <div className="mt-10 border-t border-[var(--border)] pt-5 text-sm text-[var(--muted-soft)]">© 2026 {site.name}. All rights reserved.</div>
       </div>
     </footer>
   );

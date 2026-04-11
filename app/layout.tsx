@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         <SiteHeaderShell />
-        <main className="mx-auto max-w-7xl px-4 pb-12 pt-6 sm:px-6 lg:px-8">{children}</main>
+        <main className="shell pb-10 pt-5 sm:pt-6 lg:pt-7">{children}</main>
         <SiteFooter />
       </body>
     </html>

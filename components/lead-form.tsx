@@ -5,6 +5,9 @@ type LeadFormProps = {
   formName?: string;
 };
 
+const fieldClassName =
+  "rounded-[1.2rem] border border-[var(--border)] bg-white/70 px-4 py-3.5 text-sm text-stone-900 outline-none backdrop-blur placeholder:text-stone-400 focus:border-[var(--border-strong)] focus:bg-white/88";
+
 export function LeadForm({
   title = "Tell us what kind of companion you’re hoping for",
   description = "Share your ideal size, color, city, and timing. We’ll guide you toward the most fitting current or upcoming puppy.",
@@ -12,11 +15,11 @@ export function LeadForm({
   formName = "puppy-inquiry"
 }: LeadFormProps) {
   return (
-    <div className="rounded-[2.2rem] border border-[var(--border)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,243,236,0.96))] p-5 shadow-[var(--shadow)] sm:p-8">
-      <div className="mb-6">
-        <p className="text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-[var(--gold)]">Private Inquiry</p>
-        <h3 className="mt-3 font-serif text-2xl text-stone-900 sm:text-[2rem]">{title}</h3>
-        <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{description}</p>
+    <div className="glass-panel rounded-[2rem] p-5 sm:p-8">
+      <div className="mb-6 max-w-lg">
+        <p className="text-[0.68rem] font-semibold uppercase tracking-[0.34em] text-[var(--accent-deep)]">Private Inquiry</p>
+        <h3 className="mt-3 font-serif text-[1.9rem] leading-tight text-stone-950 sm:text-[2.3rem]">{title}</h3>
+        <p className="mt-3 text-sm leading-7 text-[var(--muted)] sm:text-[0.98rem]">{description}</p>
       </div>
       <form
         name={formName}
@@ -27,21 +30,18 @@ export function LeadForm({
       >
         <input type="hidden" name="form-name" value={formName} />
         <input type="hidden" name="bot-field" />
-        <input name="name" placeholder="Full name" className="rounded-2xl border border-[var(--border)] bg-white/95 px-4 py-3.5 text-sm outline-none placeholder:text-stone-400 focus:border-stone-900" />
-        <input name="phone" placeholder="Phone number" className="rounded-2xl border border-[var(--border)] bg-white/95 px-4 py-3.5 text-sm outline-none placeholder:text-stone-400 focus:border-stone-900" />
-        <input name="email" type="email" placeholder="Email address" className="rounded-2xl border border-[var(--border)] bg-white/95 px-4 py-3.5 text-sm outline-none placeholder:text-stone-400 focus:border-stone-900" />
-        <input name="city" placeholder="Preferred city" className="rounded-2xl border border-[var(--border)] bg-white/95 px-4 py-3.5 text-sm outline-none placeholder:text-stone-400 focus:border-stone-900" />
-        <input name="preferredColor" placeholder="Preferred color" className="rounded-2xl border border-[var(--border)] bg-white/95 px-4 py-3.5 text-sm outline-none placeholder:text-stone-400 focus:border-stone-900" />
-        <input name="preferredGender" placeholder="Preferred gender" className="rounded-2xl border border-[var(--border)] bg-white/95 px-4 py-3.5 text-sm outline-none placeholder:text-stone-400 focus:border-stone-900" />
+        <input name="name" placeholder="Full name" className={fieldClassName} />
+        <input name="phone" placeholder="Phone number" className={fieldClassName} />
+        <input name="email" type="email" placeholder="Email address" className={fieldClassName} />
+        <input name="city" placeholder="Preferred city" className={fieldClassName} />
+        <input name="preferredColor" placeholder="Preferred color" className={fieldClassName} />
+        <input name="preferredGender" placeholder="Preferred gender" className={fieldClassName} />
         <textarea
           name="message"
           placeholder="Tell us about the lifestyle, size, or temperament you have in mind"
-          className="min-h-32 rounded-2xl border border-[var(--border)] bg-white/95 px-4 py-3.5 text-sm outline-none placeholder:text-stone-400 focus:border-stone-900 md:col-span-2"
+          className={`${fieldClassName} min-h-32 md:col-span-2`}
         />
-        <button
-          type="submit"
-          className="rounded-full bg-stone-950 px-6 py-4 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-stone-800 md:col-span-2"
-        >
+        <button type="submit" className="button-primary md:col-span-2 px-6 py-4 text-sm font-medium">
           {buttonLabel}
         </button>
       </form>
