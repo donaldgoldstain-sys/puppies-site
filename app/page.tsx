@@ -13,50 +13,41 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16 pb-10 pt-2 sm:space-y-20">
-      <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-8">
-        <div className="relative overflow-hidden rounded-[2.2rem] border border-[var(--border)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(246,237,227,0.98))] px-5 py-10 shadow-[var(--shadow)] sm:rounded-[2.8rem] sm:bg-[linear-gradient(135deg,rgba(255,255,255,0.96),rgba(246,237,227,0.96)_48%,rgba(231,220,207,0.98))] sm:px-10 sm:py-12 lg:px-14 lg:py-16">
-          <div className="absolute -right-10 top-8 hidden h-52 w-52 rounded-full bg-white/60 blur-3xl sm:block" />
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-[linear-gradient(90deg,transparent,rgba(175,132,89,0.35),transparent)]" />
-          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.36em] text-[var(--gold)]">Miami Beach Private Puppy Boutique</p>
-          <h1 className="mt-5 max-w-3xl font-serif text-4xl leading-[1.02] text-stone-900 sm:text-6xl sm:leading-[0.96]">
-            Teacup and micro Pomeranian puppies with a softer, more refined way to inquire.
-          </h1>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)] sm:text-lg sm:leading-8">
-            Discover polished companion puppies through a curated experience centered in Miami Beach, designed for families who want warmth, clarity, and a genuinely premium presentation.
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Link href="/available-puppies" className="rounded-full bg-stone-950 px-6 py-3.5 text-center text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-stone-800">
-              View Available Puppies
+      <section className="relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-stone-100 shadow-[var(--shadow)] sm:rounded-[2.4rem]">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/puppies/peaches-luxe.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(24,19,16,0.68),rgba(24,19,16,0.38)_44%,rgba(24,19,16,0.18)_100%)]" />
+        <div className="relative px-5 py-12 sm:px-8 sm:py-20 lg:px-14 lg:py-24">
+          <div className="max-w-2xl">
+            <h1 className="font-serif text-[2.2rem] leading-[1.02] text-white sm:text-6xl sm:leading-[0.95]">
+              Teacup Pomeranian Puppies
+            </h1>
+            <p className="mt-3 text-[0.78rem] font-medium uppercase tracking-[0.2em] text-stone-100/90 sm:mt-4 sm:text-base sm:tracking-[0.24em]">
+              Available Now • Ready for Pickup
+            </p>
+            <Link
+              href="/available-puppies"
+              className="mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-medium text-stone-900 sm:mt-8 sm:px-6 sm:py-3.5"
+            >
+              View Puppies
             </Link>
-            <Link href="/contact" className="rounded-full border border-[var(--border)] bg-white/90 px-6 py-3.5 text-center text-sm font-medium text-stone-900 transition hover:-translate-y-0.5 hover:border-stone-900">
-              Request Private Guidance
-            </Link>
-          </div>
-          <div className="mt-10 grid gap-3 sm:grid-cols-3">
-            {[
-              ["Miami Beach", "Main appointment hub"],
-              ["12 cities", "Currently served"],
-              ["White first", "Balanced color collection"]
-            ].map(([value, label]) => (
-              <div key={label} className="rounded-[1.2rem] border border-white/70 bg-white/88 p-4 sm:rounded-[1.45rem] sm:bg-white/72">
-                <p className="font-serif text-xl text-stone-900 sm:text-3xl">{value}</p>
-                <p className="mt-1 text-sm leading-6 text-[var(--muted)]">{label}</p>
-              </div>
-            ))}
           </div>
         </div>
-        <div className="space-y-5">
-          <div className="rounded-[2.4rem] border border-[var(--border)] bg-[linear-gradient(180deg,rgba(255,255,255,0.9),rgba(245,236,226,0.92))] p-6 shadow-[var(--shadow)] sm:p-8">
-            <p className="text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-[var(--gold)]">What Makes This Feel Different</p>
-            <h2 className="mt-3 font-serif text-2xl leading-tight text-stone-900 sm:text-3xl">A private, curated placement experience.</h2>
-            <div className="mt-6 space-y-4 text-sm leading-7 text-[var(--muted)]">
-              <p>Thoughtfully written puppy profiles with size, temperament, availability, and health-focused notes.</p>
-              <p>City-aware support for Miami Beach, South Florida, and major destination markets across the U.S.</p>
-              <p>A warm, polished brand voice that feels boutique rather than generic breeder advertising.</p>
-            </div>
+      </section>
+
+      <section className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
+        <div className="rounded-[2.2rem] border border-[var(--border)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(245,236,226,0.94))] p-6 shadow-[var(--shadow)] sm:p-8">
+          <p className="text-[0.7rem] font-semibold uppercase tracking-[0.34em] text-[var(--gold)]">What Makes This Feel Different</p>
+          <h2 className="mt-3 font-serif text-2xl leading-tight text-stone-900 sm:text-3xl">A private, curated placement experience.</h2>
+          <div className="mt-6 space-y-4 text-sm leading-7 text-[var(--muted)]">
+            <p>Thoughtfully written puppy profiles with size, temperament, availability, and health-focused notes.</p>
+            <p>City-aware support for Miami Beach, South Florida, and major destination markets across the U.S.</p>
+            <p>A warm, polished brand voice that feels boutique rather than generic breeder advertising.</p>
           </div>
-          <LeadForm buttonLabel="Find My Puppy" />
         </div>
+        <LeadForm buttonLabel="Find My Puppy" />
       </section>
 
       <section className="space-y-8">
