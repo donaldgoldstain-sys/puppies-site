@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf7f1;
+  --foreground: #221c18;
+  --surface: rgba(255, 255, 255, 0.8);
+  --surface-strong: #fffdf9;
+  --muted: #6f6258;
+  --border: rgba(122, 101, 83, 0.16);
+  --beige: #efe2d3;
+  --taupe: #c9b7a4;
+  --gold: #af8459;
+  --shadow: 0 30px 80px -42px rgba(57, 42, 31, 0.28);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.96), transparent 26%),
+    radial-gradient(circle at top right, rgba(245, 235, 223, 0.7), transparent 24%),
+    linear-gradient(180deg, #fdfaf5 0%, #f5eee6 52%, #fcfaf6 100%);
+  color: var(--foreground);
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+p, a, li, input, textarea, button, summary, label, select {
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  overflow-wrap: anywhere;
+}
+
+main {
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img,
+video {
+  object-fit: cover;
+}
+
+input,
+textarea,
+select,
+button {
+  max-width: 100%;
+}
+
+section,
+article,
+div {
+  min-width: 0;
+}
+
+::selection {
+  background: rgba(175, 132, 89, 0.22);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+* {
+  animation: none !important;
+  transition-property: none !important;
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+}
