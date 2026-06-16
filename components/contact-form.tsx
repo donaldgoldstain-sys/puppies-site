@@ -1,6 +1,22 @@
-// Netlify-backed inquiry form. The data-netlify attributes, the hidden
-// form-name field, and the field names are preserved from the original site so
-// the existing Netlify Forms endpoint keeps working — only the styling changed.
+"use client";
+
+import { useState } from "react";
+import { whatsappUrl } from "@/lib/site";
+
+// Inquiry form. The live site is hosted on Cloudflare Pages, where Netlify
+// Forms do not run, so submissions are routed to the business WhatsApp instead
+// (the site's primary contact channel) — fully static, no backend required.
+// Fields degrade gracefully: with JS off, the form GETs to wa.me and still
+// opens a chat; with JS on, it composes a formatted message from the fields.
+const fields: { name: string; label: string; type?: string; full?: boolean }[] = [
+  { name: "name", label: "Full name", type: "text" },
+  { name: "email", label: "Email", type: "email" },
+  { name: "phone", label: "Phone", type: "tel" },
+  { name: "city", label: "Preferred city", type: "text" },
+  { name: "preferredColor", label: "Preferred color", type: "text" },
+  { name: "preferredGender", label: "Preferred gender", type: "text" }
+];
+
 export function ContactForm({
   eyebrow = "Private Inquiry",
   title = "Tell us what kind of companion you're hoping for",
@@ -14,47 +30,66 @@ export function ContactForm({
   buttonLabel?: string;
   formName?: string;
 }) {
+  const [sent, setSent] = useState(false);
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const lines: string[] = [`New inquiry (${formName})`];
+    const labels: Record<string, string> = {
+      name: "Name",
+      email: "Email",
+      phone: "Phone",
+      city: "Preferred city",
+      preferredColor: "Preferred color",
+      preferredGender: "Preferred gender",
+      message: "Message"
+    };
+    for (const key of ["name", "email", "phone", "city", "preferredColor", "preferredGender", "message"]) {
+      const value = (data.get(key) as string | null)?.trim();
+      if (value) lines.push(`${labels[key]}: ${value}`);
+    }
+    window.open(whatsappUrl(lines.join("\n")), "_blank", "noopener,noreferrer");
+    setSent(true);
+  }
+
   return (
     <section className="block form-block">
       <div className="block-eyebrow">{eyebrow}</div>
       <h2>{title}</h2>
       <p style={{ marginBottom: 22, maxWidth: 560 }}>{description}</p>
-      <form className="form" name={formName} method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value={formName} />
-        <p hidden>
-          <label>
-            Do not fill this out: <input name="bot-field" />
-          </label>
-        </p>
+      <form
+        className="form"
+        name={formName}
+        method="get"
+        action={whatsappUrl()}
+        target="_blank"
+        rel="noopener noreferrer"
+        onSubmit={handleSubmit}
+      >
         <div className="form-row split">
-          <div className="form-row">
-            <label htmlFor={`${formName}-name`}>Full name</label>
-            <input id={`${formName}-name`} name="name" type="text" autoComplete="name" />
-          </div>
-          <div className="form-row">
-            <label htmlFor={`${formName}-email`}>Email</label>
-            <input id={`${formName}-email`} name="email" type="email" autoComplete="email" />
-          </div>
+          {fields.slice(0, 2).map((f) => (
+            <div className="form-row" key={f.name}>
+              <label htmlFor={`${formName}-${f.name}`}>{f.label}</label>
+              <input id={`${formName}-${f.name}`} name={f.name} type={f.type} />
+            </div>
+          ))}
         </div>
         <div className="form-row split">
-          <div className="form-row">
-            <label htmlFor={`${formName}-phone`}>Phone</label>
-            <input id={`${formName}-phone`} name="phone" type="tel" autoComplete="tel" />
-          </div>
-          <div className="form-row">
-            <label htmlFor={`${formName}-city`}>Preferred city</label>
-            <input id={`${formName}-city`} name="city" type="text" />
-          </div>
+          {fields.slice(2, 4).map((f) => (
+            <div className="form-row" key={f.name}>
+              <label htmlFor={`${formName}-${f.name}`}>{f.label}</label>
+              <input id={`${formName}-${f.name}`} name={f.name} type={f.type} />
+            </div>
+          ))}
         </div>
         <div className="form-row split">
-          <div className="form-row">
-            <label htmlFor={`${formName}-color`}>Preferred color</label>
-            <input id={`${formName}-color`} name="preferredColor" type="text" />
-          </div>
-          <div className="form-row">
-            <label htmlFor={`${formName}-gender`}>Preferred gender</label>
-            <input id={`${formName}-gender`} name="preferredGender" type="text" />
-          </div>
+          {fields.slice(4, 6).map((f) => (
+            <div className="form-row" key={f.name}>
+              <label htmlFor={`${formName}-${f.name}`}>{f.label}</label>
+              <input id={`${formName}-${f.name}`} name={f.name} type={f.type} />
+            </div>
+          ))}
         </div>
         <div className="form-row">
           <label htmlFor={`${formName}-message`}>Message</label>
@@ -67,6 +102,11 @@ export function ContactForm({
         <button className="btn btn-primary" type="submit">
           {buttonLabel}
         </button>
+        {sent ? (
+          <p className="form-note" role="status">
+            Opening WhatsApp with your details — if it didn&apos;t open, message us directly and we&apos;ll reply quickly.
+          </p>
+        ) : null}
       </form>
     </section>
   );

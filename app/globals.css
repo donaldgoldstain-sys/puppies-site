@@ -823,6 +823,7 @@ h6 {
 .form textarea:focus { outline: none; border-color: var(--ink); }
 .form textarea { min-height: 120px; resize: vertical; line-height: 1.55; }
 .form .btn { align-self: stretch; padding: 17px 24px; }
+.form-note { font-size: 13px; line-height: 1.6; color: var(--muted); }
 
 /* ===================== PUPPY DETAIL ===================== */
 .product { display: grid; grid-template-columns: 1fr; gap: 32px; padding: 16px 0 56px; }
