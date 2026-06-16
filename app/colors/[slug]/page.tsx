@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
-import { LeadForm } from "@/components/lead-form";
-import { PageHero } from "@/components/page-hero";
-import { PuppyCard } from "@/components/puppy-card";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { PawDivider, Breadcrumb } from "@/components/primitives";
+import { TextSection } from "@/components/page-blocks";
+import { PuppyGrid } from "@/components/puppy-grid";
+import { ContactForm } from "@/components/contact-form";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -39,30 +40,47 @@ export default async function ColorPage({ params }: Props) {
   const related = site.puppies.filter((puppy) => puppy.colorSlug === slug);
 
   return (
-    <div className="space-y-12 pb-10">
-      <PageHero eyebrow="Color Collection" title={color.name} description={color.pageDescription} secondaryLabel="Ask About This Color" />
-      <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="rounded-[2rem] border border-[var(--border)] bg-white/92 p-8">
-          <h2 className="font-serif text-3xl text-stone-900">How this color feels in the collection</h2>
-          <p className="mt-4 text-sm leading-8 text-[var(--muted)]">{color.overview}</p>
-          <p className="mt-4 text-sm leading-8 text-[var(--muted)]">{color.personality}</p>
-          <p className="mt-4 text-sm font-medium text-stone-900">{color.rarity}</p>
-          <div className="mt-8 grid gap-4 md:grid-cols-3">
-            {color.gallery.map((item) => (
-              <div key={item} className={`rounded-[1.5rem] border border-white/60 bg-gradient-to-br ${color.accentClass} p-6 text-sm text-stone-700`}>
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-        <LeadForm buttonLabel="Ask About This Color" formName={`${color.slug}-inquiry`} description={`Let us know if you want ${color.shortName.toLowerCase()} specifically or if you’re open to similar colors with the same overall mood.`} />
+    <div className="container">
+      <Breadcrumb
+        items={[{ label: "Home", href: "/" }, { label: "Colors", href: "/pomeranian-colors" }, { label: color.shortName }]}
+      />
+      <section className="page-head">
+        <h1>{color.name}</h1>
+        <p className="sub">{color.pageDescription}</p>
+        <PawDivider />
       </section>
-      <section className="space-y-6">
-        <h2 className="font-serif text-3xl text-stone-900">Related available puppies</h2>
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-          {related.length > 0 ? related.map((puppy) => <PuppyCard key={puppy.id} puppy={puppy} />) : <p className="col-span-full text-sm text-[var(--muted)]">No current listings in this color are live right now. Use the form above to ask about upcoming availability or a similar color direction.</p>}
-        </div>
+
+      <TextSection
+        eyebrow="Color Collection"
+        title="How this color feels in the collection"
+        narrow
+        paragraphs={[color.overview, color.personality, color.rarity]}
+      />
+
+      <section className="block" aria-label="Color notes">
+        <div className="block-eyebrow">In the Studio</div>
+        <ul className="gallery-notes">
+          {color.gallery.map((note) => (
+            <li key={note}>{note}</li>
+          ))}
+        </ul>
       </section>
+
+      <section className="block">
+        <h2>Related available puppies</h2>
+      </section>
+      <PuppyGrid
+        puppies={related}
+        emptyMessage="No current listings in this color are live right now. Use the form below to ask about upcoming availability or a similar color direction."
+      />
+
+      <ContactForm
+        eyebrow="Color Preferences"
+        title={`Ask about ${color.shortName} puppies`}
+        description={`Let us know if you want ${color.shortName.toLowerCase()} specifically or if you're open to similar colors with the same overall mood.`}
+        buttonLabel="Ask About This Color"
+        formName={`${color.slug}-inquiry`}
+      />
     </div>
   );
 }
