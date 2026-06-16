@@ -29,3 +29,20 @@ export const site = {
   reviews,
   faqs
 };
+
+// Digits only, with US country code, for wa.me / tel links.
+const phoneDigits = site.phone.replace(/\D/g, "");
+export const whatsappNumber = phoneDigits.length === 10 ? `1${phoneDigits}` : phoneDigits;
+
+export function telHref(phone: string = site.phone) {
+  return `tel:+1${phone.replace(/\D/g, "")}`;
+}
+
+export function smsHref(phone: string = site.phone) {
+  return `sms:+1${phone.replace(/\D/g, "")}`;
+}
+
+export function whatsappUrl(message?: string) {
+  const base = `https://wa.me/${whatsappNumber}`;
+  return message ? `${base}?text=${encodeURIComponent(message)}` : base;
+}

@@ -1,6 +1,7 @@
-import { LeadForm } from "@/components/lead-form";
-import { PageHero } from "@/components/page-hero";
 import { buildMetadata } from "@/lib/seo";
+import { Breadcrumb, PageHero } from "@/components/primitives";
+import { TextSection } from "@/components/page-blocks";
+import { ContactForm } from "@/components/contact-form";
 
 export const metadata = buildMetadata({
   title: "Adoption Process | A Refined Pomeranian Placement Experience",
@@ -8,26 +9,48 @@ export const metadata = buildMetadata({
   path: "/adoption-process"
 });
 
-export default function AdoptionProcessPage() {
-  const steps = [
-    "Begin with your preferred city, size range, color direction, and the personality you want at home.",
-    "Review the most relevant available puppies or upcoming options with clear details and honest guidance.",
-    "Reserve once the fit feels right and the next steps around timing, records, and care are fully clear.",
-    "Coordinate pickup or delivery with support designed to keep the transition calm, organized, and personal."
-  ];
+const steps = [
+  "Begin with your preferred city, size range, color direction, and the personality you want at home.",
+  "Review the most relevant available puppies or upcoming options with clear details and honest guidance.",
+  "Reserve once the fit feels right and the next steps around timing, records, and care are fully clear.",
+  "Coordinate pickup or delivery with support designed to keep the transition calm, organized, and personal."
+];
 
+export default function AdoptionProcessPage() {
   return (
-    <div className="space-y-12 pb-10">
-      <PageHero eyebrow="Adoption Process" title="A calm, polished process from first message to homecoming" description="We keep the path simple and supportive so families feel guided rather than rushed." />
-      <div className="grid gap-5 md:grid-cols-2">
+    <div className="container">
+      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Adoption Process" }]} />
+      <PageHero
+        eyebrow="Adoption Process"
+        title="A calm, polished process from first message to homecoming"
+        subtitle="We keep the path simple and supportive so families feel guided rather than rushed."
+      />
+
+      <TextSection
+        eyebrow="How It Works"
+        title="Four thoughtful steps"
+        narrow
+        paragraphs={[
+          "Each step is designed to add clarity, not pressure — from your first message to the day your puppy comes home."
+        ]}
+      />
+
+      <section className="steps-grid">
         {steps.map((step, index) => (
-          <div key={step} className="rounded-[2rem] border border-[var(--border)] bg-white/92 p-8">
-            <p className="font-serif text-4xl text-stone-900">0{index + 1}</p>
-            <p className="mt-4 text-sm leading-8 text-[var(--muted)]">{step}</p>
+          <div className="step-card" key={step}>
+            <div className="step-num">0{index + 1}</div>
+            <p>{step}</p>
           </div>
         ))}
-      </div>
-      <LeadForm buttonLabel="Start the Process" description="If you already know the city or puppy style you want, include that and we’ll make the first reply more tailored." />
+      </section>
+
+      <ContactForm
+        eyebrow="Begin"
+        title="Start the process"
+        description="If you already know the city or puppy style you want, include that and we'll make the first reply more tailored."
+        buttonLabel="Start the Process"
+        formName="adoption-inquiry"
+      />
     </div>
   );
 }
