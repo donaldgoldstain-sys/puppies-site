@@ -78,3 +78,11 @@ export function nearbyCities(location: LocationEntry, limit = 6) {
 
   return [...sameState, ...major].slice(0, limit);
 }
+
+// Some "nearby areas" are themselves cities in the network (Scottsdale next to
+// Phoenix, Bellevue next to Seattle). Those should link, not sit as dead chips.
+const byCityName = new Map(locations.map((entry) => [entry.city.toLowerCase(), entry]));
+
+export function findCityByName(name: string) {
+  return byCityName.get(name.trim().toLowerCase());
+}

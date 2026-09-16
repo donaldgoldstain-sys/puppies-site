@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
-import { findLocation, locationPath, nearbyCities } from "@/lib/locations";
+import { findCityByName, findLocation, locationPath, nearbyCities } from "@/lib/locations";
 import { locations } from "@/data/locations";
 import { PawDivider, Breadcrumb } from "@/components/primitives";
 import {
@@ -173,11 +173,19 @@ export default async function LocationPage({ params }: Props) {
       <section className="block" aria-label="Nearby areas">
         <div className="block-eyebrow">Nearby Areas</div>
         <div className="chips">
-          {location.nearbyAreas.map((area) => (
-            <span className="chip" key={area}>
-              {area}
-            </span>
-          ))}
+          {location.nearbyAreas.map((area) => {
+            const linked = findCityByName(area);
+
+            return linked && linked.citySlug !== location.citySlug ? (
+              <Link className="chip" key={area} href={locationPath(linked)}>
+                {area}
+              </Link>
+            ) : (
+              <span className="chip" key={area}>
+                {area}
+              </span>
+            );
+          })}
         </div>
       </section>
 
