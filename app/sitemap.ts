@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl } from "@/lib/seo";
 import { site } from "@/lib/site";
+import { stateGroups } from "@/lib/locations";
 
 const staticPaths = [
   "/",
@@ -35,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ),
     ...site.puppies.map((puppy) => entry(`/puppies/${puppy.slug}`, 0.8, "daily" as const)),
     ...site.colors.map((color) => entry(`/colors/${color.slug}`, 0.7, "weekly" as const)),
+    ...stateGroups.map((group) => entry(`/locations/${group.stateSlug}`, 0.7, "weekly" as const)),
     ...site.locations.map((location) =>
       entry(`/locations/${location.stateSlug}/${location.citySlug}`, 0.7, "weekly" as const)
     )

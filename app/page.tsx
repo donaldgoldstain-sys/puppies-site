@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { getPuppyImage } from "@/lib/puppy-visuals";
-import { PawDivider } from "@/components/primitives";
+import { stateGroups } from "@/lib/locations";
+import { PawDivider, CtaRow } from "@/components/primitives";
 import {
   TextSection,
   IconCards,
@@ -49,6 +50,7 @@ const processSteps = [
 export default function HomePage() {
   const featured = site.puppies.filter((puppy) => puppy.featured);
   const topLocations = site.locations.slice(0, 6);
+  const stateCount = stateGroups.length;
   const topColors = site.colors.slice(0, 4);
 
   return (
@@ -211,8 +213,8 @@ export default function HomePage() {
         <div className="block-eyebrow">Where Families Find Us</div>
         <h2>Cities we currently serve</h2>
         <p>
-          Miami Beach is our main hub, with additional placement and delivery support across Florida and a growing list of major
-          U.S. cities.
+          Miami Beach is our main hub, with placement and delivery support across {site.locations.length} cities in {stateCount}{" "}
+          states. Every city page carries its own travel routes, timing, and local care notes.
         </p>
       </section>
       <section className="link-grid">
@@ -228,6 +230,12 @@ export default function HomePage() {
             <span className="more">View City</span>
           </Link>
         ))}
+      </section>
+      <section className="block">
+        <CtaRow
+          primary={{ href: "/areas-we-serve", label: `Browse All ${site.locations.length} Cities` }}
+          secondary={{ href: "/delivery", label: "How Delivery Works" }}
+        />
       </section>
 
       {/* ===== REVIEWS ===== */}

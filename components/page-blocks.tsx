@@ -236,3 +236,19 @@ export function ReviewCard({
     </article>
   );
 }
+
+/* ---------- local facts band ---------- */
+export type FactItem = { label: string; value: string };
+
+export function LocalFacts({ items }: { items: FactItem[] }) {
+  return (
+    <section className="local-facts" aria-label="At a glance">
+      {items.map((item) => (
+        <div className="fact" key={item.label}>
+          <div className="fact-label">{item.label}</div>
+          <div className="fact-value">{item.value}</div>
+        </div>
+      ))}
+    </section>
+  );
+}

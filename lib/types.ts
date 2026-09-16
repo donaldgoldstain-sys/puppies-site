@@ -25,13 +25,21 @@ export type Puppy = {
   featured: boolean;
 };
 
+export type DeliveryOption = {
+  title: string;
+  desc: string;
+};
+
 export type LocationEntry = {
   state: string;
   stateSlug: string;
   city: string;
   citySlug: string;
-  address: string;
-  phone: string;
+  // Present only for cities where the brand publishes a local address and line.
+  // Service-area cities are reached from the Miami Beach hub instead.
+  address?: string;
+  phone?: string;
+  airport: string;
   heroTitle: string;
   heroDescription: string;
   metaDescription: string;
@@ -42,6 +50,10 @@ export type LocationEntry = {
   appointmentNote: string;
   ctaTitle: string;
   ctaDescription: string;
+  // Enriched local blocks. A city renders without them until its copy is written.
+  deliveryOptions?: DeliveryOption[];
+  careNote?: string;
+  whyLocal?: string[];
   nearbyAreas: string[];
   featuredPuppySlugs: string[];
   popularColorSlugs: string[];
@@ -71,4 +83,15 @@ export type Review = {
 export type FAQ = {
   question: string;
   answer: string;
+};
+
+export type StateContent = {
+  stateSlug: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  metaDescription: string;
+  intro: string[];
+  travelNote: string;
+  whyState: string[];
+  faq: { question: string; answer: string }[];
 };

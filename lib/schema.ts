@@ -140,13 +140,32 @@ export function colorSchema(color: ColorEntry, related: Puppy[]): Node {
 export function locationSchema(location: LocationEntry): Node {
   const path = `/locations/${location.stateSlug}/${location.citySlug}`;
 
+  // Only cities with a published address are a real place. Everywhere else is a
+  // service area reached from Miami Beach, and claiming a storefront there would
+  // be false.
+  if (!location.address) {
+    return {
+      "@type": "Service",
+      "@id": absoluteUrl(`${path}#service`),
+      name: `Teacup Pomeranian puppy placement for ${location.city}`,
+      description: location.metaDescription,
+      url: absoluteUrl(path),
+      serviceType: "Teacup and micro Pomeranian puppy placement and delivery",
+      provider: { "@id": organizationId },
+      areaServed: [
+        { "@type": "City", name: location.city, containedInPlace: { "@type": "State", name: location.state } },
+        ...location.nearbyAreas.map((area) => ({ "@type": "Place", name: area }))
+      ]
+    };
+  }
+
   return {
     "@type": "PetStore",
     "@id": absoluteUrl(`${path}#business`),
     name: `${site.name} — ${location.city}`,
     description: location.metaDescription,
     url: absoluteUrl(path),
-    telephone: location.phone,
+    ...(location.phone ? { telephone: location.phone } : {}),
     parentOrganization: { "@id": organizationId },
     address: {
       "@type": "PostalAddress",
@@ -156,5 +175,29 @@ export function locationSchema(location: LocationEntry): Node {
       addressCountry: "US"
     },
     areaServed: location.nearbyAreas.map((area) => ({ "@type": "Place", name: area }))
+  };
+}
+
+export function stateSchema(group: { state: string; stateSlug: string; cities: LocationEntry[] }): Node {
+  const path = `/locations/${group.stateSlug}`;
+
+  return {
+    "@type": "CollectionPage",
+    "@id": absoluteUrl(`${path}#collection`),
+    name: `Teacup Pomeranian Puppies in ${group.state}`,
+    description: `Cities served across ${group.state} by ${site.name}.`,
+    url: absoluteUrl(path),
+    isPartOf: { "@id": websiteId },
+    about: { "@id": organizationId },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: group.cities.length,
+      itemListElement: group.cities.map((city, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        url: absoluteUrl(`/locations/${city.stateSlug}/${city.citySlug}`),
+        name: `${city.city}, ${city.state}`
+      }))
+    }
   };
 }

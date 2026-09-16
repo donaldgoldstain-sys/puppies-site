@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site, telHref } from "@/lib/site";
+import { stateGroups } from "@/lib/locations";
 
 const exploreLinks = [
   { href: "/available-puppies", label: "Available Puppies" },
@@ -12,16 +13,13 @@ const exploreLinks = [
   { href: "/faq", label: "FAQ" }
 ];
 
-const locationLinks = [
-  { href: "/locations/florida/miami-beach", label: "Miami Beach" },
-  { href: "/locations/florida/fort-lauderdale", label: "Fort Lauderdale" },
-  { href: "/locations/florida/boca-raton", label: "Boca Raton" },
-  { href: "/locations/florida/west-palm-beach", label: "West Palm Beach" },
-  { href: "/locations/california/los-angeles", label: "Los Angeles" },
-  { href: "/locations/new-york/new-york", label: "New York" },
-  { href: "/locations/illinois/chicago", label: "Chicago" },
-  { href: "/locations/nevada/las-vegas", label: "Las Vegas" }
-];
+// Linking the state hubs rather than a fixed set of cities keeps every market
+// in the network within two clicks of the footer.
+const stateLinks = [...stateGroups]
+  .sort((a, b) => b.cities.length - a.cities.length || a.state.localeCompare(b.state))
+  .slice(0, 8)
+  .map((group) => ({ href: `/locations/${group.stateSlug}`, label: group.state }));
+
 
 export function SiteFooter() {
   return (
@@ -46,12 +44,13 @@ export function SiteFooter() {
           </div>
 
           <div className="footer-col">
-            <h4>Placement Cities</h4>
-            {locationLinks.map((item) => (
+            <h4>Placement Areas</h4>
+            {stateLinks.map((item) => (
               <Link key={item.href} href={item.href}>
                 {item.label}
               </Link>
             ))}
+            <Link href="/areas-we-serve">All Areas</Link>
           </div>
 
           <div className="footer-col">
