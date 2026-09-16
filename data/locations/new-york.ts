@@ -7,35 +7,35 @@ export const newYorkLocations: LocationEntry[] = [
     city: "Brooklyn",
     citySlug: "brooklyn",
     airport: "John F. Kennedy International Airport (JFK)",
-    heroTitle: "Teacup Pomeranian Puppies Delivered to Brooklyn, New York",
-    heroDescription: "Teacup and micro Pomeranians raised in Miami Beach and placed with Brooklyn households in walk-ups and brownstones, with travel and timing handled around your calendar.",
+    heroTitle: "Teacup Pomeranian Puppies in Brooklyn, New York",
+    heroDescription: "Teacup and micro Pomeranians placed with Brooklyn professionals who keep long hours, live in walk-ups and brownstones, and need the logistics handled around their calendar.",
     metaDescription: "Teacup and micro Pomeranian puppies for Brooklyn, New York: in-cabin flight nanny delivery into JFK, ground transport, and scheduling around long workdays.",
-    intro: "Brooklyn runs on long workdays, and messages from the borough often reach us well after dinner rather than at noon. They come from attorneys in Downtown Brooklyn, founders in Dumbo, nurses, teachers, and editors, people whose apartments sit quiet for ten hours and then fill up all at once. The first question is rarely color; it is whether a dog this small fits a week this full.",
-    lifestyleNote: "Much of Brooklyn's housing stock is prewar: four-story walk-ups in Park Slope, parlor floors in Fort Greene, converted lofts along the Williamsburg waterfront. A Pomeranian under seven pounds is one of the few dogs you can carry down four flights at six in the morning without thinking about it, and one of the few a small apartment does not shrink around. Radiator heat, narrow stairwells, and a walk to Prospect Park instead of a backyard all favor a dog built at this scale.",
-    serviceDetails: "Most of the Brooklyn process happens in writing, because that is when people are actually free. Video, weight updates, and availability go out by message so they can be read between meetings, and calls happen in the evening; Brooklyn and Miami Beach share the Eastern time zone, so nine o'clock is nine on both ends. Nothing is reserved until you have seen enough to be sure.",
-    deliveryInfo: "Brooklyn placements route through John F. Kennedy International Airport, the closest major airport to most of the borough and reachable by the Belt Parkway or Conduit Avenue. A flight nanny carries the puppy in cabin from Miami Beach and meets you in the arrivals hall at JFK, so there is no cargo hold and no long wait at a counter. If your week is unpredictable, the flight date can stay open until you are able to confirm it.",
+    intro: "Brooklyn runs on long workdays, and inquiries from the borough tend to reach us well after dinner. They come from attorneys in Downtown Brooklyn, founders in Dumbo, nurses, teachers, and editors, people whose apartments sit quiet for ten hours and then fill up all at once. The first question is almost never color; it is whether a puppy this small fits a schedule this full.",
+    lifestyleNote: "Much of Brooklyn's housing stock is prewar: four-story walk-ups in Park Slope, parlor floors in Fort Greene, converted lofts along the Williamsburg waterfront. A three or four pound Pomeranian is one of the few dogs you can carry down four flights at six in the morning without thinking about it, and one of the few a small apartment does not shrink around. Radiator heat, narrow stairwells, and a walk to Prospect Park instead of a backyard all favor a dog built at this scale.",
+    serviceDetails: "We are based in Miami Beach and keep no office, kennel, or staff in Brooklyn, so the whole introduction happens remotely. Most of it happens in writing, because that is when people here are actually free: video, weight updates, and availability sent by message, readable on the F train or between meetings, with live calls held in the evening rather than at a weekday lunch hour that barely exists. Nothing is reserved until you have seen enough to be sure.",
+    deliveryInfo: "Brooklyn placements route through John F. Kennedy International Airport, which sits just over the Queens line and is the closest major airport to most of the borough, reachable by the Belt Parkway or down Conduit Avenue. A flight nanny carries the puppy in cabin from Miami Beach and meets you in the arrivals hall at JFK, so there is no cargo hold and no long wait at a counter. If your week is unpredictable, we can keep the flight date open and confirm once you know.",
     appointmentNote: "Brooklyn families tend to plan around a stretch of time at home: a quiet week between projects, the days around the winter holidays, or the start of a summer Friday rhythm. We hold the timeline to match, so the puppy arrives when someone is genuinely there.",
     ctaTitle: "Start a Brooklyn inquiry after hours",
     ctaDescription: "Send your building setup, your weekly rhythm, and the size and color you have in mind, and we will come back with the puppies that genuinely suit Brooklyn.",
     deliveryOptions: [
       {
         title: "Miami Beach pickup",
-        desc: "Nonstop flights between JFK and Miami make this a one-day trip: meet the puppy in Miami Beach and fly home the same evening with her in cabin."
+        desc: "Fly out of JFK for the morning, meet the puppy in Miami Beach, and bring her home in cabin the same day."
       },
       {
         title: "Flight nanny into JFK",
-        desc: "A nanny flies from Miami Beach with the puppy in cabin and hands her to you in the arrivals hall at JFK, never at a cargo counter."
+        desc: "A nanny flies from Miami Beach with the puppy in cabin and hands her to you in the JFK arrivals hall."
       },
       {
         title: "Ground transport north",
-        desc: "A climate-controlled vehicle drives up I-95 from Miami Beach over two days and meets you curbside in Brooklyn when a flight date will not hold."
+        desc: "A climate controlled vehicle drives north from Miami Beach and meets you curbside on your Brooklyn block, useful when a flight date will not hold."
       }
     ],
-    careNote: "From roughly December into March, Brooklyn sidewalks are heavily salted, and a dog this close to the ground picks all of it up, so rinse and dry the paws after every walk. Below freezing, use a lined coat, since a Pomeranian this small loses heat faster than the double coat suggests. Do not clip that coat in summer either: it insulates against heat as well as cold, and in a humid Brooklyn August, early morning and after-sunset walks do more for comfort than a haircut, and they keep small paws off pavement that holds heat well past dark.",
+    careNote: "From roughly December into March, Brooklyn sidewalks and stoops are heavily salted, and a dog this close to the ground picks up all of it, so rinse and dry the paws after every walk and add a lined coat once it is below freezing. Dry steam heat in a prewar apartment works against the coat all winter, so brush more often and keep a humidifier near where she sleeps. Do not clip that coat in summer, since it insulates against heat as well as cold, and early morning or after-sunset walks do far more for comfort in a humid Brooklyn August than a haircut would.",
     whyLocal: [
-      "Sized for a fourth-floor walk-up, carried down the stairs without a thought",
+      "Sized for a prewar walk-up, carried down four flights without a thought",
       "Flight nanny delivery into JFK, in cabin from Miami Beach, never cargo",
-      "Evening calls on Eastern time, since weekday lunch hours rarely exist here",
+      "Evening and weekend calls, because weekday lunch hours rarely exist here",
       "Video and weight updates by message, readable between meetings",
       "Vet checked, age-appropriate vaccinations, and a health certificate for travel",
       "Timelines held for a quiet week when someone is actually home"
@@ -61,23 +61,23 @@ export const newYorkLocations: LocationEntry[] = [
     faq: [
       {
         question: "I work twelve-hour days. Is a teacup Pomeranian realistic for me?",
-        answer: "It depends less on the hours than on what fills them. Brooklyn owners who make it work usually have a midday walker or a neighbor on the same block, a settled pen area, and a puppy matched for a calmer temperament rather than the liveliest in the litter. Tell us your real week and we will be straight about fit."
+        answer: "It depends less on the hours than on what fills them. What usually makes it work is a midday walker or a neighbor on the same block, a settled pen area, and a puppy chosen from the calmer end of the litter rather than the liveliest. Tell us your real week and we will be straight about fit."
       },
       {
         question: "Can you deliver to a walk-up with no doorman?",
-        answer: "Yes. Plenty of Brooklyn buildings have no doorman and no elevator, so the handoff happens at your door or on the stoop, with the nanny carrying the puppy up. We ask for a buzzer or apartment number and a direct cell, then confirm the window the morning of the flight."
+        answer: "Yes. Many Brooklyn buildings have no doorman and no elevator, so the handoff happens at your door or on the stoop, with the nanny carrying the puppy up the stairs. We ask for a buzzer or apartment number and a direct cell, then confirm the window the morning of."
       },
       {
         question: "How does delivery into JFK actually work?",
-        answer: "The nanny checks in with the puppy in cabin in Miami and texts you at each step. You meet in the arrivals hall at JFK, go through the health certificate and paperwork, and leave together. Cars head back into Brooklyn by the Belt Parkway or Conduit Avenue, so we set flight times outside rush hour when we can."
+        answer: "The nanny checks in with the puppy in cabin in Miami and texts you at each step. You meet in the arrivals hall at JFK, go through the paperwork, and leave together. Cars head back into Brooklyn by the Belt Parkway or Conduit Avenue, so we set flight times outside rush hour when we can."
       },
       {
         question: "We would be bringing a puppy from Florida into a Brooklyn January. Is that a problem?",
-        answer: "A Pomeranian double coat handles cold better than the size suggests, but the change from Florida is real, so plan on short walks and a lined coat at first. Salted sidewalks matter more than the temperature does. Winter arrivals work fine; we simply build the first month around brief outings and indoor play."
+        answer: "A Pomeranian double coat handles cold better than the size suggests, but the change from Florida is real, so the first few weeks are short walks and a lined coat. Salted sidewalks matter more than the temperature does. A winter arrival is entirely workable; we build the first month around brief outings and indoor play."
       },
       {
         question: "Can I reserve now and take delivery later?",
-        answer: "Yes. Reserve during a heavy stretch and set the handoff for a week you will be home, the winter holidays or a lull between projects. Photos and weight updates keep coming in the meantime, and the travel date is locked in once your calendar clears."
+        answer: "Yes. You can reserve during a heavy stretch and set the handoff for a week you will be home, the winter holidays or a lull between projects. Photos and weight updates keep coming in the meantime, and the travel date is locked once your calendar clears."
       }
     ]
   },
@@ -90,10 +90,10 @@ export const newYorkLocations: LocationEntry[] = [
     heroTitle: "Teacup Pomeranian Puppies Delivered to Long Island, New York",
     heroDescription: "Micro and teacup Pomeranians placed with Nassau and Suffolk families from our Miami Beach home base, with the homecoming timed to the season your household actually wants.",
     metaDescription: "Teacup and micro Pomeranian puppies for Long Island, New York. Seasonal homecoming planning, flight-nanny delivery into ISP, and private Miami Beach pickup.",
-    intro: "Long Island is not one city but two counties and a hundred village identities, running from the Queens line out past the twin forks. Inquiries reach us from Garden City and Manhasset, from Huntington and Northport, from the Sound-side villages and the South Shore beach towns, and they almost always arrive with a date attached: a school break, a quiet stretch before the summer season, the first calm week after Labor Day. That calendar is usually the real conversation.",
+    intro: "Long Island is not one city but two counties and a hundred village identities, running from the Queens line east to the twin forks at Orient and Montauk. Inquiries reach us from Garden City and Manhasset, from Huntington and Northport, from the Sound-side villages and the South Shore beach towns, and they almost always arrive with a date attached: a school break, a quiet stretch before the summer season, the first calm week after Labor Day. That calendar is usually the real conversation.",
     lifestyleNote: "Most of the island lives in detached houses with yards, which sounds ideal until you remember that a four-pound Pomeranian is not a yard dog. The postwar capes and splits through central Nassau, the older colonials in the North Shore villages, the co-ops in Long Beach and Great Neck: each of them suits this breed, because the dog wants to be in the room with you and is satisfied by a short leash walk rather than an acre. Winter is the honest variable, since a puppy this small has no patience for a January driveway and will want the trip outside kept brief.",
-    serviceDetails: "Placement runs by conversation rather than by cart. We start with the size, color, and coat you have in mind, then work backward from the week you want the puppy in the house, which on Long Island is usually set by a school calendar or by the summer season out east. Photos, video, and weight updates move by email and text until the puppy is old enough to travel, and the reservation comes before travel planning, not after.",
-    deliveryInfo: "Most Long Island homecomings land at Long Island MacArthur Airport in Ronkonkoma, which keeps the handoff simple: one terminal, a short curb, and none of the crowd you would otherwise walk a small crate through at Kennedy or LaGuardia. From ISP you are minutes off the Expressway, with a shuttle to the Ronkonkoma branch of the LIRR, so a Nassau family and a Southampton family can meet the same flight without a difficult drive. If a schedule forces it, we can route a nanny into another regional airport and continue east by road.",
+    serviceDetails: "Placement runs by conversation rather than by cart. We start with the size, color, and coat you have in mind, then work backward from the week you want the puppy in the house, which on Long Island is usually set by a school calendar or by the summer season out east. Photos, video, and weight updates move by email and text until the puppy is old enough to fly, and the reservation comes before we hold anything into ISP, not after.",
+    deliveryInfo: "Most Long Island homecomings land at Long Island MacArthur Airport in Ronkonkoma, which keeps the handoff simple: one terminal, a short curb, and none of the crowd you would otherwise walk a small crate through at Kennedy or LaGuardia. From ISP you are minutes off the Expressway, with a short shuttle ride to the Ronkonkoma branch of the LIRR, so a Nassau family and a Southampton family can meet the same flight without a difficult drive. If a schedule forces it, we can route a nanny into another regional airport and continue east by road.",
     appointmentNote: "Long Island families tend to begin with a video appointment, since a same-week flight to Florida rarely fits around school pickup and the LIRR schedule. Once a puppy is reserved, we set the homecoming date together and hold it, so the week leading up to it is yours to prepare.",
     ctaTitle: "Plan a Long Island homecoming date",
     ctaDescription: "Tell us the week you want the puppy home on Long Island, the size and color you are picturing, and we will show you which puppies fit that window.",
@@ -111,11 +111,11 @@ export const newYorkLocations: LocationEntry[] = [
         desc: "A climate-controlled van runs I-95 north, crosses the Throgs Neck Bridge, and stays on the Expressway and Sunrise Highway, since commercial vans are barred from the parkways."
       }
     ],
-    careNote: "A Pomeranian carries a double coat, and the Long Island year gives it a workout: a heavy blowout in spring, a thicker regrowth through fall, then a winter spent under a harness, where it mats quietly if you only brush the surface. Line brush down to the skin once or twice a week, and rinse and dry the paws after a salted sidewalk, since de-icer is rough on feet the size of a quarter. Through July and August the island is humid as well as hot, so walk early and late and leave the coat alone rather than shaving it, because that coat is what keeps heat off the skin.",
+    careNote: "A Pomeranian carries a double coat, and the Long Island year gives it a workout: a heavy coat blow in spring, a thicker regrowth through fall, then a winter spent under a harness, where it mats quietly if you only brush the surface. Line brush down to the skin once or twice a week, and rinse and dry the paws after a salted sidewalk, since de-icer is rough on feet the size of a quarter. Through July and August the island is humid as well as hot, so walk early and late, dry the coat all the way down after a damp beach day, and leave it long rather than shaving it, because that coat is what keeps heat off the skin.",
     whyLocal: [
       "Homecoming dates planned around the school calendar and the summer season out east",
       "Flight-nanny arrivals into Long Island MacArthur in Ronkonkoma, a one-terminal handoff",
-      "Ground transport routed on the Expressway and Sunrise Highway, never the low parkways",
+      "Ground transport routed on the Expressway and Sunrise Highway, since parkways bar commercial vans",
       "Winter travel windows chosen with nor'easters and flight cancellations in mind",
       "Puppies sized for village co-ops, postwar capes, and North Shore colonials alike",
       "Vet checked, with age-appropriate vaccinations and a health certificate before travel"
@@ -186,21 +186,21 @@ export const newYorkLocations: LocationEntry[] = [
       },
       {
         title: "Flight Nanny to JFK",
-        desc: "A flight nanny carries your puppy in cabin from Miami and meets you at John F. Kennedy International Airport, LaGuardia, or Newark Liberty."
+        desc: "A flight nanny carries your puppy in cabin from Miami and meets you inside John F. Kennedy International, or at LaGuardia if that routing fits better."
       },
       {
-        title: "Ground Transport Up I-95",
-        desc: "Ground transport runs up the I-95 corridor on a scheduled route, with a calm door to door handoff in Manhattan, Brooklyn, or Queens."
+        title: "Ground Transport North",
+        desc: "Ground transport runs north along the I-95 corridor on a scheduled route, with a calm door to door handoff in Manhattan, Brooklyn, Queens, or nearby New Jersey."
       }
     ],
-    careNote: "New York winters ask a lot of a small coat, so a fitted sweater and a quick paw rinse after salted sidewalks go a long way. Indoor radiator heat can dry the skin through the colder months, so a humidifier and gentler, less frequent bathing help keep the double coat soft. In August humidity, walk early or late and keep water close, since tiny dogs warm up faster than they cool down.",
+    careNote: "New York winters ask a lot of a small coat, so a fitted sweater for January wind and a quick paw rinse after salted sidewalks go a long way. Radiator heat dries indoor air from roughly November through March, so a humidifier and gentler, less frequent bathing help keep the double coat soft. July and August bring heavy humidity, and subway platforms hold that heat, so walk early or late and carry water on any trip that goes underground.",
     whyLocal: [
-      "Prep tips for elevator rides, tight hallways, and constant apartment building noise.",
-      "Flight nanny arrivals timed around JFK traffic and your building's doorman hours.",
-      "Vet checked with age-appropriate vaccinations and a health certificate, plus records for NYC licensing.",
-      "Temperament notes shared plainly, covering walk-up stairs, sidewalk crowds, and subway platform noise.",
-      "Handoffs arranged in Manhattan, Brooklyn, or Queens, since we travel from Miami.",
-      "Reserve now, set the flight date later around your move-in or doorman schedule."
+      "Temperament notes cover elevators, narrow hallways, and steady apartment building noise.",
+      "Flight nanny arrivals timed around JFK traffic on the Van Wyck Expressway.",
+      "Vet checked, age-appropriate vaccinations, and a health certificate dated for the flight north.",
+      "Notes on how each puppy has handled stairs, sidewalk crowds, and traffic sound.",
+      "Handoff points arranged in Manhattan, Brooklyn, Queens, or out toward Westchester and Long Island.",
+      "No New York kennel; puppies stay in Miami Beach until the day they travel."
     ],
     nearbyAreas: [
       "Manhattan",

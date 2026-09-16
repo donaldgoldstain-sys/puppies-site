@@ -11,16 +11,16 @@ export const utahLocations: LocationEntry[] = [
     heroDescription: "Teacup and micro Pomeranians placed with Salt Lake City households, including retirees and empty nesters who want a small, steady companion and an unhurried, well-supported process.",
     metaDescription: "Teacup and micro Pomeranian puppies for Salt Lake City homes, with quiet companion placements, flight nanny delivery into SLC, and unhurried guidance.",
     intro: "Salt Lake City sits in a narrow valley with the Wasatch Range rising straight off the east bench, and daily life here tends to organize itself around that geography: short drives, walkable older neighborhoods, and the habit of getting outside early. A good share of our inquiries from this metro come from retirees and empty nesters, often people who have downsized from a family house in Yalecrest or Holladay into something smaller and single level. They are rarely looking for a project. They are looking for company.",
-    lifestyleNote: "Much of the older housing here, the brick bungalows around Sugar House and the narrow lots in the Avenues, comes with a small fenced yard that a four-pound dog can manage without a long walk in January. In the newer downtown and Central Ninth condos, where buildings often set a pet weight limit, a teacup Pomeranian clears it without discussion. The rhythm most owners settle into is a cool morning loop at Liberty Park and a quiet indoor afternoon, which suits a small dog far better than it suits a large one.",
+    lifestyleNote: "Much of the older housing here, the brick bungalows around Sugar House and the narrow lots in the Avenues, comes with a small fenced yard that a four-pound dog can manage without a long walk in January. In the newer downtown and Central Ninth condos, where buildings often set a pet weight limit, a teacup Pomeranian sits well under the usual number. The rhythm most owners settle into is a cool morning loop at Liberty Park and a quiet indoor afternoon, which suits a small dog far better than it suits a large one.",
     serviceDetails: "Salt Lake City runs two hours behind Miami Beach, so we hold calls in your morning, which lands in the quiet middle of our day. From there it moves at whatever pace you set: photos and short video of the puppies that match what you actually described, a candid conversation about adult size and temperament, and a reservation only once you feel sure. No one here is put on a clock.",
-    deliveryInfo: "Every puppy leaves from Miami Beach and arrives at Salt Lake City International Airport (SLC), which works in your favor here. SLC is a hub, so a nanny's route is usually one leg rather than a connection, and the terminal sits about fifteen minutes west of downtown instead of an hour out of town. We confirm the flight, the arrival area, and a window you can plan a morning around before anyone leaves Florida.",
+    deliveryInfo: "Every puppy leaves from Miami Beach and arrives at Salt Lake City International Airport (SLC), which works in your favor here. SLC is a major connecting hub, so a nanny's route is usually one leg rather than a connection, and the terminal sits about ten minutes west of downtown instead of an hour out of town. We confirm the flight, the arrival area, and a window you can plan a morning around before anyone leaves Florida.",
     appointmentNote: "Most Salt Lake families plan around the season they already live by, either after the holidays and before ski weekends fill the calendar, or in late spring once the sidewalks are dry and the yard is usable again. If you leave the valley for part of the winter, tell us early and we will set the handoff at the right end of that trip.",
     ctaTitle: "Start a quiet Salt Lake City inquiry",
-    ctaDescription: "Tell us the size, coat, and timing you have in mind, along with how your days actually run, and we will point you toward the right fit.",
+    ctaDescription: "Tell us the size, coat, and timing you have in mind, plus how your Salt Lake week actually runs, and we will point you toward the right fit.",
     deliveryOptions: [
       {
         title: "Private Miami Beach Pickup",
-        desc: "Salt Lake to Miami is a single nonstop, so some families make the pickup a two-day trip and carry the puppy back in an under-seat carrier."
+        desc: "Salt Lake and Miami are linked by direct flights, so some families make the pickup a two-day trip and carry the puppy home in an under-seat carrier."
       },
       {
         title: "Flight Nanny To SLC",
@@ -31,13 +31,13 @@ export const utahLocations: LocationEntry[] = [
         desc: "A climate-controlled ground route delivers to the house itself, which suits families in Bountiful, Sandy, or Draper who would rather skip the airport entirely."
       }
     ],
-    careNote: "The dry air is the thing to plan for. At roughly 4,300 feet with very little humidity, a double coat holds static and the skin underneath can flake, so a room humidifier through the winter and a light leave-in conditioner at brushing time do more good here than switching shampoos. The other habit worth keeping is rinsing paws after any walk from December through March, since the ice melt spread on valley sidewalks and driveways is hard on pads the size of a quarter.",
+    careNote: "The dry air is the thing to plan for. Salt Lake sits above 4,200 feet in a semi-arid valley, so a winter of forced-air heat leaves a double coat full of static and the skin under it flaking, and a room humidifier plus a light leave-in conditioner at brushing time does more good here than switching shampoos, with a paw rinse after any walk from December through March to keep sidewalk ice melt off pads the size of a quarter. Summer is the other half of it, since valley afternoons run well past ninety degrees, so keep walks to early morning and evening and leave the coat unshaved, because it is what shields the skin from that sun.",
     whyLocal: [
       "Puppies vet checked with age-appropriate vaccinations and a health certificate before any flight",
       "A flight nanny hands your puppy to you inside the SLC terminal, in person",
       "Sizes suited to downtown condo weight limits and single-level east bench homes",
       "Temperament notes written for quiet households, not for high-energy trail weekends",
-      "Winter arrivals scheduled around storm days and Wasatch canyon road closures",
+      "Winter arrivals timed around Wasatch storm days rather than pushed through them",
       "One point of contact from the first question through the week after arrival"
     ],
     nearbyAreas: [
@@ -69,7 +69,7 @@ export const utahLocations: LocationEntry[] = [
       },
       {
         question: "We are retired and travel a few months a year. Is a small dog practical?",
-        answer: "Usually yes, and the size is the reason. A teacup Pomeranian fits an under-seat carrier, which means a trip somewhere warmer for the winter is a ticket rather than a cargo arrangement. If the dog stays behind instead, a small one is easier to place with family or a sitter. Tell us your travel pattern and we will factor it into the timing."
+        answer: "Usually yes, and the size is the reason. A teacup Pomeranian fits an under-seat carrier, so a trip somewhere warmer for the winter is usually a cabin ticket rather than a cargo arrangement, depending on the airline. If the dog stays behind instead, a small one is easier to place with family or a sitter. Tell us your travel pattern and we will factor it into the timing."
       },
       {
         question: "How much exercise does one need during inversion season?",

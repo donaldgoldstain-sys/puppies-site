@@ -158,25 +158,25 @@ export const floridaLocations: LocationEntry[] = [
     deliveryOptions: [
       {
         title: "Miami Beach pickup",
-        desc: "Some families drive or fly down to meet their puppy at a private Miami Beach appointment, then head back to Jacksonville up I-95 or through JAX."
+        desc: "Families who want to meet their puppy in person book a private Miami Beach appointment, then drive roughly six hours north or catch a short flight home."
       },
       {
         title: "Flight nanny to JAX",
-        desc: "A nanny carries your puppy in the cabin and meets you at Jacksonville International Airport (JAX), with arrival timing set around your schedule and the weather."
+        desc: "A nanny carries your puppy in the cabin to Jacksonville International Airport, meeting you near baggage claim at a time that suits your schedule."
       },
       {
         title: "Ground transport north",
-        desc: "Ground transport follows the I-95 corridor from Miami Beach to Jacksonville, with an unhurried schedule and a handoff arranged near Riverside, San Marco, or Ponte Vedra."
+        desc: "Ground transport follows the I-95 corridor from Miami Beach to Jacksonville, with an unhurried schedule and a handoff near Riverside, San Marco, or Ponte Vedra Beach."
       }
     ],
-    careNote: "Jacksonville summers are long and humid, so a Pomeranian coat does best with regular brushing that keeps the undercoat open and air moving through it. Walks settle more comfortably in the early morning or after sunset, with fresh water waiting at the end of every outing. Winter here brings genuine cold snaps that South Florida never sees, so keep a light sweater on hand for a small puppy that holds very little body heat.",
+    careNote: "Jacksonville summers run long and humid, so a Pomeranian's double coat needs regular brushing that keeps the undercoat open rather than matted, and it should never be shaved down. Walk in the early morning or after sunset, once the pavement has cooled and the afternoon thunderstorms have moved through, with fresh water waiting at the end of every outing. North Florida winters are mild but still bring real freezes that South Florida rarely sees, so keep a light sweater on hand for a puppy that holds very little body heat.",
     whyLocal: [
-      "Local handoff in Jacksonville is coordinated by appointment, alongside private Miami Beach visits.",
-      "Flight nanny arrivals land at Jacksonville International Airport (JAX), met at your chosen hour.",
-      "Handoffs arranged across Riverside, San Marco, Ponte Vedra, Orange Park, and the Beaches.",
+      "Handoff in Jacksonville is arranged by appointment, with pickup also available in Miami Beach.",
+      "Flight nanny arrivals land at Jacksonville International Airport and are met at your chosen hour.",
+      "Handoffs arranged across Riverside, San Marco, Ponte Vedra Beach, Orange Park, and the Beaches.",
       "Every puppy travels vet checked, with age-appropriate vaccinations and a health certificate.",
       "Travel timing is planned around North Florida heat and summer afternoon storms.",
-      "Handoff windows work around I-95 and Butler Boulevard traffic near the Beaches."
+      "Duval, Clay, and St. Johns county addresses all fall inside the handoff area."
     ],
     nearbyAreas: [
       "Riverside",
@@ -282,11 +282,11 @@ export const floridaLocations: LocationEntry[] = [
     heroTitle: "Teacup Pomeranian Puppies in Naples, Florida",
     heroDescription: "A calm, guided way for first-time small-dog owners in Naples to find a teacup or micro Pomeranian, with support that continues after the handoff.",
     metaDescription: "Teacup and micro Pomeranian puppies for Naples, Florida families, with first-time owner guidance, private Miami Beach pickup, and flight delivery into RSW.",
-    intro: "Naples runs on a seasonal rhythm, and a good share of the questions we field from here come from people buying their first small dog rather than their first dog. Many spent years with retrievers or shepherds and are now in a Gulf Shore Boulevard condo or a villa behind a gate, sizing down to something they can carry through a lobby. Others have just retired and want a companion small enough to come north with them in June.",
-    lifestyleNote: "Homes here tend to fall into two shapes: a tower unit where an elevator ride stands between the dog and the grass, or a single-family house with a screened lanai and a pool cage. A three-to-five-pound Pomeranian suits both, provided someone thinks through the potty routine around afternoon storms and hot pavement before the puppy arrives. Buildings along Gulf Shore Boulevard and Vanderbilt Beach often set pet weight limits, and a Pomeranian this size usually sits well under them, though your association's pet addendum is still worth reading first.",
-    serviceDetails: "With Naples families we usually start with a conversation instead of a list of available puppies, because the real first question is which size a first-time owner should actually live with day to day. Since most of that talk happens while you are up north or across the state from us, we share photos, current weights, and short videos as puppies grow, and we say plainly when a particular puppy is not the right fit for a household. Reservation, vet check, health certificate, and travel dates get scheduled in that order, so nothing is rushed at the end.",
-    deliveryInfo: "Naples Municipal Airport handles private and charter traffic rather than scheduled airline service, so flights come into Southwest Florida International Airport (RSW) in Fort Myers, roughly forty minutes up I-75 from Old Naples. Ground transport is just as simple from our side: a single run across Alligator Alley, a couple of hours in normal traffic. Whichever route you choose, we confirm timing in writing and stay reachable the whole way.",
-    appointmentNote: "Because so much of Naples empties out from late spring through October, families here generally either take a puppy home before they head north or wait until they are settled back in for season. We build the date around that calendar rather than asking you to work around ours.",
+    intro: "Naples runs on a seasonal rhythm, and many of the questions we field from here come from people buying their first small dog rather than their first dog. Plenty spent years with retrievers or shepherds and are now in a Gulf Shore Boulevard condo or a villa behind a gate, sizing down to something they can carry through a lobby. Others have just retired and want a companion small enough to come north with them in June.",
+    lifestyleNote: "Homes here tend to fall into two shapes: a tower unit where an elevator ride stands between the dog and the grass, or a single-family house with a screened lanai and a pool cage. A three-to-five-pound Pomeranian suits both, provided someone thinks through the potty routine around afternoon storms and hot pavement before the puppy arrives. Buildings along the beach often set pet weight limits, and a dog this size sits well under the usual ones, though you will still want to read your association's pet addendum for breed rules and dog counts.",
+    serviceDetails: "With Naples families we usually start with a conversation instead of a list of available puppies, because the real first question is which size a first-time owner should live with day to day in an elevator building or behind a gate. From there we share photos, current weights, and short videos as puppies grow, and we say plainly when a particular puppy is not the right fit for a household. Reservation, vet check, health certificate, and travel dates get scheduled in that order, worked backward from your season dates so nothing is rushed at the end.",
+    deliveryInfo: "Naples Municipal Airport handles private and charter traffic only, so scheduled flights come into Southwest Florida International Airport (RSW) in Fort Myers, roughly forty minutes up I-75 from Old Naples. Ground transport is simple from our side: north through Broward, then straight across Alligator Alley, a little over two hours in normal traffic. Whichever route you choose, we confirm timing in writing and stay reachable the whole way.",
+    appointmentNote: "Because so much of Naples empties out between June and October, families here generally either take a puppy home before they head north or wait until they are settled back in for season. We build the date around that calendar rather than asking you to work around ours.",
     ctaTitle: "Start a private Naples inquiry",
     ctaDescription: "Tell us how small you actually want to go, what your summer travel looks like, and when you would like a puppy home, and we will guide from there.",
     deliveryOptions: [
@@ -296,18 +296,18 @@ export const floridaLocations: LocationEntry[] = [
       },
       {
         title: "Flight Nanny Delivery",
-        desc: "A nanny carries your puppy in the cabin into RSW, where you meet them at arrivals in Fort Myers, about forty minutes north of Naples."
+        desc: "A nanny carries your puppy in the cabin into RSW in Fort Myers, where you meet them at arrivals, about forty minutes north of Naples."
       },
       {
         title: "Ground Transport",
         desc: "A private ground run from Miami Beach straight to your door in Naples, with pauses for water and a text when the van is a few minutes out."
       }
     ],
-    careNote: "Gulf humidity packs an undercoat down faster than most people expect, so a few minutes of brushing every day or two, especially behind the ears and under the legs, keeps mats from setting in. There is no real winter here to trigger one big seasonal shed, so the coat drops a little year round, and shaving it for summer only removes the layer that shades the skin. Rinse the salt and sand off after any beach or boat day, and keep the bed out of the direct path of the air conditioning, since indoors runs cold and dry while outside stays wet.",
+    careNote: "Gulf humidity packs an undercoat down faster than most people expect, so a few minutes of brushing every day or two, especially behind the ears and under the legs, keeps mats from setting in. Resist shaving that coat for summer, since it is what shades the skin, and rinse the salt and sand off after any beach or boat day. Indoors runs the opposite way here, cold and dry under constant air conditioning, so put the bed somewhere out of the vent's direct path.",
     whyLocal: [
       "Guidance written for first-time small-dog owners, not just first-time buyers",
       "Honest size talk up front, since teacup and micro are not the same",
-      "Flights routed into RSW in Fort Myers, since Naples has no scheduled airline service",
+      "Delivery routed through RSW, since Naples has no scheduled commercial passenger service",
       "Timing planned around season, so no handoff lands while you are north",
       "Vet checked, age-appropriate vaccinations, and a health certificate for air travel",
       "Condo elevator and lanai potty routines discussed before your puppy comes home"
@@ -337,11 +337,11 @@ export const floridaLocations: LocationEntry[] = [
       },
       {
         question: "We go north for the summer. Can a Pomeranian travel with us?",
-        answer: "Seasonal travel comes up in most of our conversations with Naples families. A teacup Pomeranian fits an in-cabin carrier under the seat on most airlines, which is part of why the breed suits seasonal households. Let your puppy settle in for a while before the first trip, and ask your vet about a health certificate, since airlines and some states ask for one."
+        answer: "That comes up often with seasonal households here. A teacup Pomeranian usually fits an in-cabin carrier under the seat, though every airline sets its own carrier size and pet rules, so confirm yours before booking. Let your puppy settle in for a while before the first trip, and ask your vet about a health certificate."
       },
       {
         question: "Do you have a location in Naples we can visit?",
-        answer: "No. We place from Miami Beach, and Naples is a service area, so there is no kennel or showroom here to walk into. Families either drive over Alligator Alley for a private pickup appointment, or we bring the puppy to them by flight nanny into RSW or by private ground transport to the door."
+        answer: "No. We place from Miami Beach, and Naples is a service area, so there is no kennel, office, or showroom here to walk into. Families either drive over Alligator Alley for a private pickup appointment, or we bring the puppy to them by flight nanny into RSW or by private ground transport to the door."
       },
       {
         question: "How does potty training work in a high-rise or a gated community?",
@@ -349,7 +349,7 @@ export const floridaLocations: LocationEntry[] = [
       },
       {
         question: "When should we start if we want a puppy home for season?",
-        answer: "Earlier than most people expect. Interest picks up through the fall as seasonal residents come back, so families hoping to have a puppy settled by the holidays usually reach out in late summer. If your dates are flexible, the quiet months are an easier time to choose a puppy and to get a routine going."
+        answer: "Earlier than most people expect. Inquiries tend to pick up through the fall as seasonal residents come back, so families hoping to have a puppy settled by the holidays usually reach out in late summer. If your dates are flexible, the quiet Gulf summer is an easier time to choose a puppy and get a routine going."
       }
     ]
   },
@@ -374,25 +374,25 @@ export const floridaLocations: LocationEntry[] = [
     deliveryOptions: [
       {
         title: "Miami Beach Pickup",
-        desc: "Take the Turnpike south and meet your puppy at our Miami Beach base, with an unhurried handoff, paperwork review, and time to settle before the drive home."
+        desc: "Drive south and meet your puppy at our Miami Beach base, a straight run down Florida's Turnpike, with an unhurried handoff and paperwork review."
       },
       {
         title: "Flight Nanny to MCO",
-        desc: "A dedicated nanny accompanies your puppy in cabin from South Florida into Orlando International, meeting you at MCO arrivals for a calm, in-person handoff."
+        desc: "A nanny accompanies your puppy in cabin from Miami into Orlando International Airport (MCO), meeting you inside the terminal for a calm, in-person handoff."
       },
       {
         title: "Ground Transport",
-        desc: "A private ground route north through Florida, arriving at your Orlando address or a preferred meeting point in Winter Park, Lake Nona, or Dr. Phillips."
+        desc: "A private ground route north up Florida's Turnpike to your Orlando address, or a meeting point in Winter Park, Lake Nona, or Dr. Phillips."
       }
     ],
-    careNote: "Orlando stays humid well past sundown for much of the year, so a Pomeranian's double coat does best with regular line brushing and a thorough dry-down after a bath or one of the summer afternoon thunderstorms that roll through Central Florida almost daily. Keep walks to early morning or after dark, since inland pavement holds heat long after the sun drops and there is no coastal breeze to pull it off. Leave the coat intact rather than shaving it, because it insulates against heat as much as cold, and let steady air conditioning and fresh water handle the rest.",
+    careNote: "Orlando stays humid long past sundown for much of the year, so a Pomeranian's double coat does best with regular line brushing and a thorough dry-down after a bath or an afternoon thunderstorm. Walk early or late, since inland pavement here holds heat well after dark, and leave the coat intact rather than shaving it, because it insulates against heat as much as cold. Steady air conditioning and fresh water indoors handle most of the rest.",
     whyLocal: [
       "Central Florida humidity calls for a coat routine we walk through with you.",
-      "Local pickup and handoff coordinated near Winter Park, Lake Nona, and Dr. Phillips.",
-      "Flight nanny arrivals land at Orlando International, with 528 and 417 access.",
-      "Vet checked with age-appropriate vaccinations and a health certificate before leaving South Florida.",
-      "Handoffs are timed around afternoon storms and Orlando's heaviest theme park travel weeks.",
-      "Temperament is discussed honestly, including how Florida heat limits midday outdoor time."
+      "Handoff meeting points arranged near Winter Park, Lake Nona, or Dr. Phillips.",
+      "Flight nanny arrivals come into Orlando International Airport, minutes from Lake Nona.",
+      "Puppies are vet checked with age-appropriate vaccinations and a health certificate before travel.",
+      "Travel is timed around summer afternoon storms and peak theme park weeks.",
+      "We discuss your household routine, including visitors and out-of-town family, before matching."
     ],
     nearbyAreas: [
       "Winter Park",
@@ -431,32 +431,32 @@ export const floridaLocations: LocationEntry[] = [
     heroDescription: "Quiet, companion-minded teacup and micro Pomeranians placed with Sarasota households from our Miami Beach hub, with unhurried guidance and delivery timed to your season.",
     metaDescription: "Teacup and micro Pomeranian puppies for Sarasota, Florida, placed from our Miami Beach hub with private pickup, flight nanny into SRQ, or ground transport.",
     intro: "Sarasota keeps a slower rhythm than most of Florida's coastal cities: an arts calendar that runs from late fall through spring, a bayfront people actually walk in the mornings, and neighborhoods built around comfort rather than nightlife. A good share of our inquiries from here come from retired and semi-retired households, often couples who have downsized into a villa or a key-side condo and want company that does not complicate the day. Some are choosing a dog for the first time in years, after a long-lived one passed.",
-    lifestyleNote: "Much of the housing here suits a very small dog well: maintenance-free villas, condos with weight limits written into the building rules, and single-story homes where nothing has to be carried up a flight of stairs. Summer sets the schedule more than anything else, since the heat and the reliable afternoon storms push walks to early morning and after six. A four to seven pound Pomeranian handles that easily, and stays light enough to lift into a car or carry through a lobby without thinking about it.",
-    serviceDetails: "Everything runs from Miami Beach, so a Sarasota placement begins with a conversation rather than a visit. We ask what the day actually looks like at home, how often you travel north or host family, and whether you want a puppy that settles quickly or one with a little more spark. From there we send current photos and video of the two or three puppies that genuinely fit, not the whole list.",
-    deliveryInfo: "Sarasota Bradenton International Airport (SRQ) is the arrival point for most placements here, and it is an unusually easy airport to meet in: a single terminal, a short walk from the curb, and handoffs in the arrivals area near baggage claim rather than down a long connector hall. A puppy flies in-cabin with a nanny rather than in cargo, and because South Florida to SRQ schedules shift by season, we confirm the routing with you before anything is booked. Private Miami Beach pickup and ground transport are both available if flying is not what you want.",
+    lifestyleNote: "Much of the housing here suits a very small dog well: maintenance-free villas, condos with weight limits written into the building rules, and single-story homes where nothing has to be carried up a flight of stairs. Summer sets the schedule more than anything else, since the heat and the reliable afternoon storms of the June through September rainy season push walks to early morning and after six. A four to seven pound Pomeranian handles that easily, and stays light enough to lift into a car or carry through a lobby without thinking about it.",
+    serviceDetails: "Everything runs from Miami Beach, so a Sarasota placement begins with a conversation rather than a visit. We ask what the day actually looks like at home, whether you head north for the summer or host family through season, and whether you want a puppy that settles quickly or one with a little more spark. From there we send current photos and video of the two or three puppies that genuinely fit, not the whole list.",
+    deliveryInfo: "Sarasota-Bradenton International Airport (SRQ) is the arrival point for most placements here, and it is an unusually easy airport to meet someone in: one small terminal, a short walk from the curb, no long connector halls to manage while holding a carrier. The flight up from South Florida is short, and a puppy travels in-cabin with a nanny rather than in cargo. Private Miami Beach pickup and ground transport are both available if flying is not what you want.",
     appointmentNote: "Many Sarasota families plan around the season, reserving in late summer so a puppy is settled before the winter calendar fills, or waiting until spring once the drive north is behind them. Tell us your window early and we will keep the conversation open rather than rush the decision.",
     ctaTitle: "Start a quiet Sarasota inquiry",
-    ctaDescription: "Tell us the size, color, and timing that suit your household, and whether SRQ, a Gulf coast ground route, or Miami Beach pickup fits your Sarasota plans.",
+    ctaDescription: "Tell us the size, color, and timing that suit your Sarasota household, and we will point you toward the puppies currently worth your attention.",
     deliveryOptions: [
       {
         title: "Miami Beach Pickup",
-        desc: "Meet your puppy at our Miami Beach hub and drive home the same day, up I-75 across Alligator Alley and then north through Fort Myers."
+        desc: "Meet your puppy at our Miami Beach hub and drive home the same day, west across Alligator Alley and then north on I-75."
       },
       {
         title: "Flight Nanny to SRQ",
-        desc: "A nanny carries your puppy in-cabin into SRQ and hands off near baggage claim, a short walk from the curb and close-in parking."
+        desc: "A nanny carries your puppy in-cabin into SRQ and hands off inside the terminal, an easy meeting point with short walks and close-in parking."
       },
       {
         title: "Ground Transport",
         desc: "A private ground route brings your puppy up the Gulf coast to your door, useful if you would rather skip the airport or live out toward Lakewood Ranch."
       }
     ],
-    careNote: "A Pomeranian's double coat insulates against heat as much as cold, so it should be brushed out and thinned by a groomer, never shaved down for the summer. Gulf humidity is the real work: mats form quickly behind the ears and under the legs, and sand or salt picked up on Siesta Key or Lido needs rinsing out the same day. Winters here stay mild and any cold snap is brief, so flea, tick, and heartworm prevention belongs on the calendar all twelve months.",
+    careNote: "A Pomeranian's double coat insulates against heat as much as cold, so have a groomer brush and thin it rather than shave it down for the summer. Gulf humidity is the real work: mats form quickly behind the ears and under the legs, and the sand and salt picked up on Siesta Key or Lido should be rinsed out the same day. Siesta Key's quartz sand stays cool underfoot, but asphalt and shell driveways do not, so test the ground with your hand before a midday walk, and keep flea, tick, and heartworm prevention running all twelve months in a climate where a freeze is rare.",
     whyLocal: [
       "Placements sized for villas, key-side condos, and single-story homes without stairs.",
       "Flight nanny handoffs at SRQ, a small terminal that is easy to meet in.",
-      "Guidance for households that want a quiet companion, not a project.",
-      "Honest sizing estimates so a grown dog stays light enough to lift and carry.",
+      "Guidance for downsized Sarasota households that want a companion, not a project.",
+      "Honest adult sizing, so a lift into the car or a condo lobby stays easy.",
       "Timing built around season, travel north, and visiting family.",
       "Vet checked, age-appropriate vaccinations, and a health certificate before any travel."
     ],
@@ -481,7 +481,7 @@ export const floridaLocations: LocationEntry[] = [
     faq: [
       {
         question: "Can a teacup Pomeranian handle Sarasota summers?",
-        answer: "Yes, with the day arranged around it. Walks belong to early morning and the hour before sunset, since asphalt and shell paths hold heat long after the air cools, even where Siesta Key's quartz sand stays comfortable underfoot. Keep water within reach, watch for heavy panting, and let a groomer thin the coat rather than shave it."
+        answer: "Yes, with the day arranged around it. Walks belong to early morning and the hour before sunset, once the pavement has cooled, and the middle of the day is for air conditioning. Keep water within reach, watch for heavy panting, and let a groomer thin the coat instead of shaving it, since that coat is part of how the dog handles heat."
       },
       {
         question: "We spend summers up north. Can the puppy travel with us?",
@@ -489,15 +489,15 @@ export const floridaLocations: LocationEntry[] = [
       },
       {
         question: "Will a Pomeranian clear our condo association's pet rules?",
-        answer: "The weight limit is usually the deciding line, and an adult teacup or micro Pomeranian sits well under the limits most buildings downtown and on the keys set. Pomeranians rarely appear on breed restriction lists. Ask your association for its written policy anyway, and we will give you the expected adult size range before you reserve."
+        answer: "The weight limit is usually the deciding line, and an adult teacup or micro Pomeranian is generally well under the limits Sarasota buildings set, though every association writes its own. Breed restriction lists rarely name Pomeranians. Ask your association for the written policy before you reserve, and we will give you the expected adult size range to check against it."
       },
       {
         question: "Do you come to Sarasota for meetings?",
-        answer: "No. We work from Miami Beach and keep no kennel, office, or staff on the Gulf coast, so nothing here is a showroom visit. What we do instead is video: live calls with the puppy, plus current photos and short clips, so you see temperament and size honestly before anything is reserved."
+        answer: "No. We work from Miami Beach and keep no location on the Gulf coast, so nothing here is a showroom visit. What we do instead is video: live calls with the puppy, plus current photos and short clips, so you see temperament and size honestly before anything is reserved."
       },
       {
         question: "Is a small Pomeranian a good match for a quieter household?",
-        answer: "Often, yes. They bond closely with one or two people, are content with short walks and long stretches of company, and need no yard, which suits a villa or a condo without one. They are alert and will announce the doorbell, so if you share walls downtown or on the keys, tell us and we will steer you toward the calmer puppies."
+        answer: "Often, yes. They bond closely with one or two people, are content with short walks and long stretches of company, and need no yard, which suits a villa or a condo with no grass of its own. They are alert and will announce the door, so if you share walls downtown or on the keys, tell us and we will steer you toward the calmer puppies."
       }
     ]
   },
@@ -511,27 +511,27 @@ export const floridaLocations: LocationEntry[] = [
     heroDescription: "Teacup and micro Pomeranians placed with St. Petersburg buyers who want a small indoor companion and a handoff that fits an already full calendar.",
     metaDescription: "Teacup and micro Pomeranian puppies for St. Petersburg, FL. Flight-nanny delivery into PIE, evening handoffs, and placement timed around a working calendar.",
     intro: "St. Petersburg does not run on its postcard. Downtown towers and the Edge District fill early, the hospital campuses just south of Central stay busy around the clock, and plenty of the city is over the Howard Frankland or the Gandy toward Tampa before sunrise. People who write to us from here tend to schedule a puppy the way they schedule everything else, deliberately and several weeks out.",
-    lifestyleNote: "Housing here splits between 1920s bungalows on the brick streets of Historic Kenwood and the Old Northeast and the newer glass towers along Beach Drive. A Pomeranian this small asks nothing of either one, which is the appeal for people who are not home much, since a short leash walk to Crescent Lake or the Pier lawn does more for the breed than an acre would. From June on, the walking pattern here tends to shift to early morning and after sunset anyway.",
-    serviceDetails: "Most St. Petersburg placements run by text, email, and video call, since we are in Miami Beach and you are on the other side of the state. You get one point of contact rather than a queue, current photos and vet records as they come in, and calls set around a bay commute instead of a nine to five. Nothing moves forward until you say it does.",
-    deliveryInfo: "St. Pete-Clearwater International Airport (PIE) is the usual arrival point, and it is a genuinely easy one: a single small terminal off Roosevelt Boulevard in Clearwater, a short curb, and no long walk from gate to pickup. From there it is a straight run down I-275 to downtown and the Old Northeast, or west over the Pinellas Bayway to the beaches. Ground transport and a private Miami Beach appointment are the other two routes, depending on what your week looks like.",
-    appointmentNote: "Families here usually reserve several weeks ahead and set a delivery date once the quarter's travel is mapped. The downtown Grand Prix weekend, usually late February or early March, is worth flagging, since the street circuit closes much of the waterfront.",
+    lifestyleNote: "Housing here splits between 1920s bungalows on the brick streets of Historic Kenwood and the Old Northeast and the newer glass towers along Beach Drive. A Pomeranian this small asks nothing of either one, which is the appeal for people who are not home much, since a short leash walk to Crescent Lake or the Pier lawn does more for the breed than an acre would. From June on, the walking pattern here shifts to early morning and after sunset anyway, with the afternoon given over to storms.",
+    serviceDetails: "Most St. Petersburg placements run by text, email, and video call, since we are in Miami Beach and you are on the other side of the state. You get one point of contact rather than a queue, current photos and vet records as they come in, and calls set around a bay commute rather than a standard nine to five. Nothing moves forward until you say it does.",
+    deliveryInfo: "St. Pete-Clearwater International Airport (PIE) is the usual arrival point, and it is a genuinely easy one: a single small terminal off Roosevelt Boulevard in Clearwater, a short curb, and no long walk from gate to pickup. From there it is a straight run down I-275 to downtown, the Old Northeast, and Snell Isle, or south and west across the Pinellas Bayway if you are out toward St. Pete Beach. Ground transport and a private Miami Beach appointment are the other two routes, depending on what your week looks like.",
+    appointmentNote: "Families here usually reserve several weeks ahead and set a delivery date once the quarter's travel is mapped. The downtown Grand Prix weekend, usually late February or early March, is worth flagging, since the street circuit closes roads around the waterfront and Albert Whitted.",
     ctaTitle: "Start a quiet St. Petersburg inquiry",
-    ctaDescription: "Tell us your size and color preference, your neighborhood, and whether PIE delivery or a Miami Beach appointment fits the weeks that are realistically calm.",
+    ctaDescription: "Tell us your size and color preference, your neighborhood or building, and the weeks that are realistically calm, and we will shape the timing around that.",
     deliveryOptions: [
       {
         title: "Miami Beach pickup",
-        desc: "Drive down through Alligator Alley or fly out of Tampa International, then meet your puppy at a private Miami Beach appointment and head home the same day."
+        desc: "Drive down through Alligator Alley or take a Tampa International nonstop, meet your puppy at a private Miami Beach appointment, and head home the same day."
       },
       {
         title: "Flight nanny delivery",
-        desc: "A nanny flies your puppy in cabin from South Florida and meets you at the PIE curb, so the handoff fits between meetings."
+        desc: "A nanny flies your puppy in cabin from South Florida, usually with one connection, and meets you at the PIE curb between your meetings."
       },
       {
         title: "Ground transport",
         desc: "A climate-controlled vehicle runs up the Gulf coast and over the Sunshine Skyway, delivering to your building lobby or front door at an agreed hour."
       }
     ],
-    careNote: "Gulf humidity is the real coat challenge here, not the heat by itself. Rinse the salt out after a trip to Pass-a-Grille or Fort De Soto and dry a Pomeranian all the way to the skin, because a damp undercoat in this climate invites hot spots, and never shave the double coat, which is what keeps sun off the skin. Walk early or after sunset from May through September, plan around the near daily afternoon thunderstorms, and keep a light sweater for the handful of January mornings that turn genuinely cool.",
+    careNote: "Gulf humidity is the real coat challenge here, not the heat by itself, so dry a Pomeranian all the way to the skin after a bath or a saltwater rinse, because a damp undercoat in this climate invites hot spots. Never shave the double coat, which is what keeps sun off the skin, and rinse the sand and salt out after a trip to the Fort De Soto dog beach, one of the few shorelines in Pinellas where dogs are actually allowed. Walk early or well after sunset from May through September, plan around the near daily afternoon thunderstorms, and keep a light sweater for the handful of January mornings that turn genuinely cool.",
     whyLocal: [
       "PIE is a small terminal, so the airport handoff takes minutes, not hours",
       "Evening and weekend windows for buyers commuting across the bay to Tampa",
@@ -565,11 +565,11 @@ export const floridaLocations: LocationEntry[] = [
       },
       {
         question: "How does flight-nanny delivery into PIE actually work?",
-        answer: "Your puppy flies in cabin with a nanny who carries the carrier the entire way, and you meet at the curb outside the terminal. PIE is small enough that the walk from gate to curb takes minutes, which is why we favor it for working buyers. We confirm the flight and a narrow arrival window a few days ahead."
+        answer: "Your puppy flies in cabin with a nanny who keeps the carrier in hand the entire way, and you meet at the curb outside the terminal. PIE has one small terminal, so the walk from gate to curb takes minutes. There is no nonstop from South Florida, so the routing usually includes a connection, and we confirm the flight and a narrow arrival window a few days ahead."
       },
       {
         question: "Can a teacup Pomeranian live in a downtown high-rise without a yard?",
-        answer: "Yes, and it works well for a dog this size. Elevator trips are the main adjustment, so we talk through crate training and an indoor potty setup before delivery, especially for units well above the lobby. Between Beach Drive, the Pier lawn, and North Shore Park, you have enough short-walk options that a yard is not the deciding factor."
+        answer: "Yes, and it suits a dog this size. Elevator trips are the main adjustment, so we talk through crate training and an indoor potty setup before delivery, especially for units well above the lobby. Between Beach Drive, the Pier lawn, and North Shore Park, you have enough short-walk options that a yard is not the deciding factor."
       },
       {
         question: "Is there somewhere in St. Petersburg I can come see the puppies?",
@@ -577,7 +577,7 @@ export const floridaLocations: LocationEntry[] = [
       },
       {
         question: "What about summer heat and hurricane season?",
-        answer: "We plan around both. Summer deliveries are set for morning or evening rather than the middle of the day, and from June through November we watch the forecast closely and move a date rather than fly into weather. Much of Pinellas County sits in a coastal evacuation zone, so a pet-friendly plan is worth sorting out before you need one."
+        answer: "We plan around both. Summer deliveries are set for morning or evening rather than the middle of the day, and from June through November we watch the forecast and move a date rather than fly into weather. Much of Pinellas County sits in a coastal evacuation zone, so a pet-friendly plan is worth sorting out before you need one."
       }
     ]
   },
@@ -602,25 +602,25 @@ export const floridaLocations: LocationEntry[] = [
     deliveryOptions: [
       {
         title: "Miami Beach Pickup",
-        desc: "Meet your puppy in person at our Miami Beach home base, roughly a four hour drive south from Tampa Bay down I-75 and Alligator Alley."
+        desc: "Meet your puppy in person at our Miami Beach home base, about four and a half hours from Tampa Bay by I-75 and Alligator Alley."
       },
       {
         title: "Flight Nanny to TPA",
-        desc: "A nanny travels with your puppy in cabin and meets you in the main terminal at Tampa International Airport (TPA) once the arrival window is confirmed."
+        desc: "A nanny flies with your puppy in cabin and meets you on the main terminal baggage level at Tampa International Airport (TPA)."
       },
       {
         title: "Ground Transport Handoff",
-        desc: "Climate controlled ground transport runs up the state for a handoff in Westshore, South Tampa, Clearwater, St. Petersburg, or at your own door."
+        desc: "Climate-controlled ground transport drives north from Miami Beach for a handoff in Westshore, Clearwater, St. Petersburg, or at your Tampa door."
       }
     ],
-    careNote: "Tampa stays hot and humid from roughly May into October, with near daily afternoon thunderstorms, so a Pomeranian's double coat should be brushed through rather than shaved down, since that coat insulates against heat as much as cold. Walk early in the morning or after sunset, once Bayshore Boulevard sidewalks and parking decks have given up the day's heat, and keep water within reach. Winter cold fronts can drop mornings into the forties, which a healthy Pom handles easily, and a quick towel dry after a summer downpour keeps the coat from matting in the humidity.",
+    careNote: "Tampa stays hot and humid from spring into late fall, so a Pomeranian's double coat should be brushed out regularly rather than shaved down, since that coat insulates against heat as much as cold. Walk early or after sunset, once the Bayshore Boulevard sidewalk and downtown parking decks have cooled, and keep water close through the summer afternoon thunderstorm season. Winters here are mild and drier, but steady air conditioning in summer and a quick towel dry after storms keep the coat comfortable and free of mats.",
     whyLocal: [
-      "Flight nanny delivery into Tampa International Airport (TPA), with your puppy in cabin.",
-      "Handoff windows planned around Howard Frankland, Gandy, and Bayshore Boulevard traffic.",
-      "Handoffs across South Tampa, Hyde Park, Westshore, Clearwater, St. Petersburg, and Brandon.",
-      "Coat care guidance written for Gulf Coast heat and the summer storm season.",
+      "Flight nanny delivery into Tampa International Airport (TPA), puppy riding in cabin.",
+      "Handoff windows planned around Howard Frankland, Gandy, and Bayshore traffic.",
+      "Coverage across South Tampa, Westshore, Carrollwood, Clearwater, St. Petersburg, and Brandon.",
+      "Coat care guidance written for Gulf Coast heat and summer storm season.",
       "Vet checked, age-appropriate vaccinations, and a health certificate before any travel.",
-      "Questions answered by our Miami Beach team before arrival and after settling in."
+      "Questions answered by phone or text before pickup and after settling in."
     ],
     nearbyAreas: [
       "South Tampa",

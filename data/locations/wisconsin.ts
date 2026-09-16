@@ -8,13 +8,13 @@ export const wisconsinLocations: LocationEntry[] = [
     citySlug: "milwaukee",
     airport: "Milwaukee Mitchell International Airport (MKE)",
     heroTitle: "Teacup Pomeranian Puppies in Milwaukee, Wisconsin",
-    heroDescription: "Teacup and micro Pomeranians placed with Milwaukee families from our Miami Beach home base, with travel into Mitchell International planned carefully around Wisconsin weather.",
+    heroDescription: "Teacup and micro Pomeranians placed with Milwaukee families from our Miami Beach home base, with travel into Milwaukee Mitchell International planned carefully around Wisconsin winters.",
     metaDescription: "Teacup and micro Pomeranian puppies for Milwaukee families, with flight-nanny delivery into MKE, ground transport, and private Miami Beach pickup.",
     intro: "Milwaukee sits tight against Lake Michigan, a city of brick duplexes, short walkable blocks, and winters that shape the whole year around them. Inquiries from this metro come from Third Ward and Walker's Point condo owners, East Side and Bay View homeowners, and North Shore families up in Whitefish Bay and Fox Point. Nearly all of them open with the same question: how does a puppy actually get here from Florida.",
-    lifestyleNote: "Much of the housing stock here is older than it looks from the curb. Two-flats and Polish flats with steep back staircases, cream city brick bungalows with small fenced yards, warehouse conversions in the Third Ward with long hallways and freight elevators. A three-pound Pomeranian handles all of it well, as long as someone is carrying her down those stairs in January rather than letting her take them alone, and summer makes up for it with early walks on the Oak Leaf Trail and shade at Lake Park.",
-    serviceDetails: "Milwaukee placements are coordinated entirely from Miami Beach, beginning with a conversation about size, coat color, and when you genuinely want a puppy in the house. From there you see photographs and short video of the puppies that fit, and a travel plan is drafted before anything is finalized. Nothing is confirmed until the date on the calendar works at both ends.",
-    deliveryInfo: "Milwaukee Mitchell International Airport sits roughly eight miles south of downtown off Howell Avenue, which makes it one of the more forgiving arrival airports in the country for a handoff. It is a single terminal with a short walk from the gates to baggage claim, so a nanny can be with you minutes after landing instead of crossing half a mile of concourse. Florida schedules into MKE hold steady year round and thicken through winter, which gives us real choice on arrival times.",
-    appointmentNote: "We usually suggest starting four to six weeks ahead, which leaves room to choose a travel date that is not sitting on top of a lake-effect storm or a holiday flight rush. If you already spend part of the winter in Florida, say so early, because that often reshapes the whole plan.",
+    lifestyleNote: "Much of the housing stock here is older than it looks from the curb. Two-flats and Polish flats with steep back staircases, Cream City brick bungalows with small fenced yards, warehouse conversions in the Third Ward with long hallways and freight elevators. A three-pound Pomeranian handles all of it well, as long as someone is carrying her down those stairs in January rather than letting her take them alone, and summer makes up for it with early walks on the Oak Leaf Trail and shade at Lake Park.",
+    serviceDetails: "Milwaukee placements are coordinated entirely from Miami Beach, beginning with a conversation about size, coat color, and when you genuinely want a puppy in the house, which in Wisconsin usually comes down to a winter arrival or waiting for the thaw. From there you see photographs and short video of the puppies that fit, and a travel plan into Mitchell is drafted before anything is finalized. Nothing is confirmed until the date on the calendar works at both ends.",
+    deliveryInfo: "Milwaukee Mitchell International Airport sits about five miles south of downtown off Howell Avenue, which keeps the drive short in either direction on handoff day. It is a single terminal building with a brief walk from the concourses to baggage claim, so a nanny can be with you minutes after landing instead of crossing half a mile of concourse. Florida routes into MKE run year round and expand through the winter, which gives us real choice on arrival times.",
+    appointmentNote: "We usually suggest starting four to six weeks ahead, which leaves room to choose a travel date that is not sitting on top of a winter storm or a holiday flight rush. If you already spend part of the winter in Florida, say so early, because that often reshapes the whole plan.",
     ctaTitle: "Plan your Milwaukee arrival date",
     ctaDescription: "Tell us the size and color you have in mind and the week that suits you, and we will build the route into Milwaukee around it.",
     deliveryOptions: [
@@ -31,10 +31,10 @@ export const wisconsinLocations: LocationEntry[] = [
         desc: "Door to door transport covers roughly fifteen hundred miles, with the final leg up I-94 and a handoff arranged near the airport or out in Wauwatosa."
       }
     ],
-    careNote: "Road salt is the real winter problem in Milwaukee, not the cold itself. It burns small pads and mats into the feathering on a Pomeranian's legs, so a rinse and towel dry after every walk from December through March saves a great deal of grooming later. The double coat handles a Wisconsin January better than most people expect, though a three-pound dog still loses heat quickly, and short frequent trips outside beat one long walk when the wind is coming off the lake.",
+    careNote: "Road salt is the real winter problem in Milwaukee, more than the cold itself. It irritates small pads and mats into the feathering on a Pomeranian's legs, so a rinse and towel dry after every walk from December through March saves a great deal of grooming later. The double coat handles a Wisconsin January better than most people expect, though a three-pound dog still loses heat quickly, and short frequent trips outside beat one long walk when a northeast wind is coming straight off the lake.",
     whyLocal: [
       "Flight nanny arrivals into Mitchell International, with the handoff at baggage claim",
-      "Travel dates chosen around lake-effect snow, cold snaps, and holiday flight loads",
+      "Travel dates chosen around winter storms, cold snaps, and holiday flight loads",
       "Ground transport into Milwaukee County with meeting points along the I-94 corridor",
       "Private pickup in Miami Beach for families already wintering in Florida",
       "Coat and paw guidance written for road salt, slush, and lakefront wind",
@@ -61,7 +61,7 @@ export const wisconsinLocations: LocationEntry[] = [
     faq: [
       {
         question: "How does a puppy actually get from Miami Beach to Milwaukee?",
-        answer: "Three ways. A flight nanny can carry your puppy in the cabin on a Florida route into Mitchell International, which is usually the smoothest option. Ground transport is the alternative for anyone who would rather skip the airport entirely, and private pickup in Miami Beach stays open if you are traveling south anyway."
+        answer: "Three ways. A flight nanny can carry your puppy in the cabin on a Florida route into Mitchell International, which is usually the simplest option. Ground transport is the alternative for anyone who would rather skip the airport entirely, and private pickup in Miami Beach stays open if you are traveling south anyway."
       },
       {
         question: "What happens if a snowstorm cancels the flight?",
@@ -73,7 +73,7 @@ export const wisconsinLocations: LocationEntry[] = [
       },
       {
         question: "Can you deliver outside the city itself?",
-        answer: "Yes. Arrival coordination covers Milwaukee County and the collar suburbs, so Wauwatosa, Whitefish Bay, Shorewood, Brookfield, Mequon, and Oak Creek are all routine. Anything farther out is usually handled as a meeting point near Mitchell rather than a drive to the door. Tell us your cross streets and we will plan around your day."
+        answer: "Yes. Arrival coordination covers Milwaukee County and the surrounding suburbs, so Wauwatosa, Whitefish Bay, Shorewood, Brookfield, Mequon, and Oak Creek are all routine. Anything farther out, toward Racine or Kenosha, is usually handled as a meeting point near Mitchell or along I-94 rather than a drive to the door."
       },
       {
         question: "Do you have a location in Milwaukee?",

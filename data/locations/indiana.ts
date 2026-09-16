@@ -13,7 +13,7 @@ export const indianaLocations: LocationEntry[] = [
     intro: "Indianapolis runs on a calendar more than a clock. Inquiries reach us from Hamilton County households in newer construction with attached garages, from Meridian-Kessler and Irvington families in older homes with back staircases and cold floors, and from downtown professionals in converted Wholesale District lofts. Almost all of them open with the same practical question: which month is actually the right month to bring a very small puppy home here.",
     lifestyleNote: "Much of this metro lives between an attached garage and a fenced back yard, which is a real advantage for a four-pound dog in January. Older neighborhoods trade that for porches, steps, and sidewalks that hold ice well into February, so the first winter walk is usually a short one. Once the salt is off the pavement, the Monon Trail and the Cultural Trail make flat, easy outings simple to fit into an evening.",
     serviceDetails: "Everything is coordinated from Miami Beach: availability updates, photos and short videos as a puppy grows, and a reservation held to the week you have chosen. For Indianapolis families we tend to work backward from the date rather than forward from the litter, checking the arrival window against school breaks, holiday travel, and whatever May has already claimed. Nothing is rushed to fill a slot.",
-    deliveryInfo: "Indianapolis International Airport (IND) is one of the more civilized places in the country to receive a puppy: a single terminal, a short walk to the curb, and an easy drive back downtown or up I-465 to the northern suburbs. Indiana keeps Eastern Time, so a morning departure from Miami Beach arrives the same clock day with no conversion on either end. The handoff itself happens indoors, which matters more in February than it does in September.",
+    deliveryInfo: "Indianapolis International Airport (IND) is an easy place to receive a puppy: a single terminal, a short walk to the curb, and a straightforward drive back downtown or up I-465 to the northern suburbs. Indianapolis keeps Eastern Time, so a morning departure from Miami Beach arrives the same clock day with no conversion on either end. The handoff itself happens indoors, which matters more in February than it does in September.",
     appointmentNote: "Start the conversation earlier than feels necessary, since the calmest Indianapolis homecomings are usually planned a full season ahead and then confirmed once the travel week is certain. Late September through early November is the stretch families reserve first, followed by the week of the October fall break many Indiana districts keep.",
     ctaTitle: "Plan your Indianapolis homecoming date",
     ctaDescription: "Tell us the season that suits your household, along with the size and color you have in mind, and we will map a realistic Indianapolis arrival week.",
@@ -65,11 +65,11 @@ export const indianaLocations: LocationEntry[] = [
       },
       {
         question: "Should we avoid scheduling a homecoming in May?",
-        answer: "Many families do. The 500 Festival, the mini-marathon, and race weekend take over two weeks of the local calendar, and households downtown or on the west side lose their quiet routine along with their parking. A new puppy needs a predictable house at first, so we often shift May reservations into early June."
+        answer: "Many families do. The 500 Festival, the mini-marathon, and race weekend claim a good part of the month, and households downtown or on the west side near the Speedway lose their quiet routine along with their parking. A new puppy needs a predictable house at first, so we often shift May reservations into early June."
       },
       {
         question: "Do you have a location in Indianapolis?",
-        answer: "No. Everything is run from Miami Beach, and Indianapolis is a delivery and service market for us. You can meet your puppy in Florida, receive a flight nanny handoff at IND, or arrange ground transport to your door. Updates, coordination, and paperwork are handled the same way whichever route you choose."
+        answer: "No. Everything is run from Miami Beach, and Indianapolis is a delivery and service market for us. You can meet your puppy in Florida, receive a flight nanny handoff at IND, or arrange ground transport to your door. Updates, coordination, and paperwork run the same whether your door is in Zionsville or a block off Mass Ave."
       },
       {
         question: "How do you handle winter travel days and delays?",

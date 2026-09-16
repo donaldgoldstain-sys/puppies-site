@@ -11,9 +11,9 @@ export const oregonLocations: LocationEntry[] = [
     heroDescription: "Micro and teacup Pomeranians placed with Portland professionals who need a small companion that fits a demanding calendar, a compact home, and a long wet season.",
     metaDescription: "Teacup and micro Pomeranian puppies for Portland, Oregon. Raised and vet checked in Miami Beach, with flight nanny delivery into PDX or private pickup.",
     intro: "Portland runs on schedules with very little slack in them: a shift on Marquam Hill, a product cycle out along the Sunset Highway in the Silicon Forest, a downtown client calendar that fills before the rain lets up. The inquiries we get from this metro tend to arrive late in the evening Pacific time, after the workday has finally closed, from people who have wanted a small dog for a while and want the logistics handled rather than improvised.",
-    lifestyleNote: "Much of the inner eastside is early century housing, the Craftsman bungalows and foursquares of Laurelhurst, Irvington, and Sellwood, with narrow yards, wood floors, and a covered front porch that earns its keep from October on. Closer in, the Pearl District and South Waterfront are towers with elevators and a relief area on the ground floor. A Pomeranian suits either one: small enough for a condo, sturdy enough for a quick loop around the block between meetings, and content to wait out a gray afternoon indoors.",
-    serviceDetails: "Everything happens from Miami Beach, where the puppy is raised, vet checked, and given age-appropriate vaccinations before a health certificate is issued for travel. For Portland households we work mostly through photos, video, and a standing call slot that sits outside your working hours, usually early morning Pacific while Miami is already mid-morning. Nothing about the process asks you to take a day off to keep it moving.",
-    deliveryInfo: "Portland International Airport (PDX) is the arrival point for nearly every delivery into this metro, and it is an unusually forgiving one: a compact terminal, a short walk from gate to baggage claim, and curbside on the lower level. A flight nanny carries the puppy in cabin from Miami, landing in the Pacific afternoon after roughly six hours in the air and a three hour time change. From the airport it is a straight run down I-205 or I-84 to the eastside, and the MAX Red Line goes from the terminal into downtown if you would rather not drive.",
+    lifestyleNote: "Much of the inner eastside is early twentieth century housing, the Craftsman bungalows and foursquares of Laurelhurst, Irvington, and Sellwood, with narrow yards, wood floors, and a covered front porch that earns its keep from October on. Closer in, the Pearl District and South Waterfront are towers with elevators and a relief area on the ground floor. A Pomeranian suits either one: small enough for a condo, sturdy enough for a quick loop around the block between meetings, and content to wait out a gray afternoon indoors.",
+    serviceDetails: "Everything happens from Miami Beach, where the puppy is raised, vet checked, and given age-appropriate vaccinations before a health certificate is issued for travel. For Portland households we work mostly through photos, video, and a standing call slot that sits outside your working hours, usually early morning Pacific while Miami is already mid-morning. Because Miami runs three hours ahead, updates and paperwork are usually waiting in your inbox before the Portland workday starts.",
+    deliveryInfo: "Portland International Airport (PDX) is the arrival point for nearly every delivery into this metro, and it is an easy one to meet a flight at: a single terminal, a short walk from the gate to baggage claim, and curbside pickup on the lower level. A flight nanny carries the puppy in cabin from Miami, usually landing in the Pacific afternoon after six to eight hours of travel and a three hour time change. From the airport it is a straight run down I-205 or I-84 to the eastside, and the MAX Red Line goes from the terminal into downtown if you would rather not drive.",
     appointmentNote: "Portland conversations tend to land before eight in the morning or after seven at night, and we keep a written trail of availability so a decision never depends on catching us live. If you would rather meet the puppy in person first, a private Miami Beach appointment folds easily into a trip you were already planning.",
     ctaTitle: "Start a Portland inquiry on your schedule",
     ctaDescription: "Send the size, color, and timing you have in mind, and we will come back with current availability and a route into Portland that fits your week.",
@@ -31,11 +31,11 @@ export const oregonLocations: LocationEntry[] = [
         desc: "Door to door across the country, arriving at your address in Beaverton, Lake Oswego, or inner Portland, with a window we confirm the day before."
       }
     ],
-    careNote: "The Portland issue is not cold, it is damp. From October into May the rain comes as weeks of steady drizzle rather than storms, and a double coat left to dry on its own will mat behind the ears and under the legs, so keep a towel by the door and a slicker brush within reach. July and August swing the other way, with stretches in the nineties in the valley, so walk early, stay off hot pavement, and let a small dog set the pace.",
+    careNote: "The Portland problem is damp more than cold. From October into May the rain arrives as weeks of steady drizzle rather than storms, and a double coat left to dry on its own will mat behind the ears and under the legs, so keep a towel by the door and a slicker brush within reach. July into early September flips dry and warm, with occasional runs of days in the nineties in the valley, so walk early, stay off hot pavement, and let a small dog set the pace.",
     whyLocal: [
       "Delivery into PDX, the one practical arrival airport for the Portland metro.",
       "Evening and early morning Pacific calls that fit around a full workday.",
-      "A double coat suited to the long drizzly season from October through May.",
+      "Coat care guidance built for the long drizzly season, October through May.",
       "Small enough for a Pearl District condo or a Sellwood bungalow.",
       "Written availability updates, so nothing depends on catching a call live.",
       "Handoff timing planned around I-5 and Sunset Highway rush hours."
@@ -65,7 +65,7 @@ export const oregonLocations: LocationEntry[] = [
       },
       {
         question: "Will a teacup Pomeranian be alright while I am at work all day?",
-        answer: "A Pomeranian is small but not a low attention dog, and a long unbroken workday is a real thing to plan for. Portland makes that easier than most places, with midday walkers and daycare widely available across the inner eastside and the westside suburbs, and a lot of offices and patios here are openly dog friendly. Crate training early makes the rest manageable."
+        answer: "A Pomeranian is small but not a low attention dog, and a long unbroken workday is a real thing to plan for. Portland helps, with midday walkers and daycare available across the inner eastside and the westside suburbs, and a lot of offices and patios here are openly dog friendly. Crate training early makes the rest manageable."
       },
       {
         question: "Do you have a location in Portland?",
@@ -73,7 +73,7 @@ export const oregonLocations: LocationEntry[] = [
       },
       {
         question: "What time of year is easiest for a Portland arrival?",
-        answer: "Any month works, though the first week sets the tone. Arriving in the dry stretch between late June and September gives a puppy easy outdoor time and long evening light for house training. A winter arrival is fine too and mostly means more indoor work and a towel routine, with the occasional east wind off the Gorge icing things over for a day."
+        answer: "Any month works, though the first week sets the tone. Arriving in the dry stretch from July into September gives a puppy easy outdoor time and long evening light for house training. A winter arrival is fine too and mostly means more indoor work and a towel routine, with the occasional east wind off the Gorge icing things over for a day or two."
       },
       {
         question: "Can you deliver to Beaverton, Hillsboro, or Lake Oswego?",

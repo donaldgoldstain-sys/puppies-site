@@ -22,25 +22,25 @@ export const illinoisLocations: LocationEntry[] = [
     deliveryOptions: [
       {
         title: "Private Miami Beach pickup",
-        desc: "Some Chicago families fold pickup into a Florida trip, meeting us privately in Miami Beach and flying home with the puppy in cabin."
+        desc: "Some Chicago families fold pickup into a Florida trip, meeting us privately in Miami Beach and flying home into O'Hare with the puppy in cabin."
       },
       {
         title: "Flight nanny to O'Hare",
-        desc: "A flight nanny carries your puppy in cabin from Miami to O'Hare International Airport, meeting you at baggage claim at a time that suits you."
+        desc: "A flight nanny carries your puppy in cabin from Miami and hands off at baggage claim inside O'Hare International Airport, with timing set around your schedule."
       },
       {
-        title: "Ground transport north",
-        desc: "For families who prefer the road, private ground transport makes the long drive from Miami Beach, with a curbside handoff arranged around parking on your block."
+        title: "Ground transport to Chicago",
+        desc: "For families who prefer the road, a private ground transport drive from Miami Beach takes several days, ending with a scheduled curbside handoff at your Chicago address."
       }
     ],
-    careNote: "Chicago winters ask real planning from a small double coat: keep outings short when wind off the lake drives the temperature down, and rinse road salt and de-icer from paws after every sidewalk walk. Dry forced-air heat indoors can leave the coat flat, so brush often and watch for static and itchy skin. Summers here run hot and humid, so walk early or late and keep a puppy this size off sun-baked pavement.",
+    careNote: "Chicago winters ask real planning from a small double coat, so keep January outings short when wind off Lake Michigan pushes the chill below zero, and rinse road salt and ice melt off paws after every sidewalk walk. Dry forced air heat indoors can leave the coat flat and the skin itchy, so brush often through the cold months. Summers here turn genuinely hot and humid by July, so walk early or late and stay off baked midday pavement near the lakefront.",
     whyLocal: [
-      "Delivery timed around O'Hare arrival windows and Kennedy Expressway traffic into the city.",
-      "High rise handoffs coordinated with doormen, freight elevators, and building move-in rules.",
-      "Winter travel days planned around lake effect snow, de-icing holds, and delays.",
-      "Cold weather routines for salted sidewalks, slush, and short winter walks downtown.",
-      "Handoffs arranged in River North, Gold Coast, Lincoln Park, West Loop, and Evanston.",
-      "Vet checked puppies with age-appropriate vaccinations and a health certificate for air travel."
+      "Flight arrivals timed for O'Hare, with Midway an option when schedules fit better.",
+      "High rise handoffs coordinated with doormen, freight elevators, and building move-in policies.",
+      "Winter arrival days planned around lake effect snow, de-icing delays, and O'Hare holds.",
+      "Cold weather coat guidance for salted sidewalks and wind off Lake Michigan.",
+      "Handoffs arranged in River North, the Gold Coast, Lincoln Park, and West Loop.",
+      "Vet checked puppies with age-appropriate vaccinations and a health certificate for travel."
     ],
     nearbyAreas: [
       "River North",
@@ -78,43 +78,43 @@ export const illinoisLocations: LocationEntry[] = [
     heroTitle: "Teacup Pomeranian Puppies for Naperville, Illinois Families",
     heroDescription: "Raised and vet checked in Miami Beach, then matched to western suburb homes where this is the family's first very small dog.",
     metaDescription: "Teacup and micro Pomeranian puppies placed with Naperville, Illinois families. Raised and vet checked in Miami Beach, delivered by flight nanny into O'Hare.",
-    intro: "Naperville sits about thirty miles west of the lakefront, and a good share of the families who write to us from here have never owned a dog at all. A house with a yard, kids who have been asking for a year, and no real sense of what a four pound animal needs on a Tuesday. That last part is where most of our conversation goes.",
-    lifestyleNote: "Much of the housing stock here is single family with a fenced yard, which sounds ideal until you watch a three pound puppy try to cross it in February. Teacup Pomeranians do better with a small, sheltered relief spot near the door than with the run of a quarter acre. On the older, tighter lots near the Historic District, that setup tends to happen by default.",
-    serviceDetails: "First-time inquiries from Naperville usually open with size, and we slow that down on purpose. We will tell you what a given puppy is likely to weigh grown, what that means for stairs and for a house with children, and which one is the steadiest fit rather than the smallest. Nothing gets reserved before that conversation has happened.",
-    deliveryInfo: "O'Hare International Airport is the usual arrival point, roughly forty minutes northeast by way of I-88 and the tollway, longer if the timing lands inside a weekday rush. A flight nanny carries the puppy in cabin from Miami and meets you at the terminal, so the handoff and the drive home happen in one trip. Ground transport and private pickup in Miami Beach both stay open as alternatives.",
-    appointmentNote: "Most families here plan around the school calendar, and a puppy that lands in late June or over a long weekend gets the benefit of someone home all day. We hold a travel window open while you work the timing out.",
+    intro: "Naperville sits about thirty miles west of the Loop, and many of the families who write to us from here are choosing a first dog rather than a second one. A house with a yard, kids who have been asking for a year, and no real sense of what a four pound animal needs on a Tuesday. That last part is where most of our conversation goes.",
+    lifestyleNote: "Much of the housing stock here is single family with a fenced yard, which sounds ideal until you watch a four pound puppy try to cross it in February. Teacup Pomeranians do better with a small, sheltered relief spot near the door than with the run of a quarter acre. On the older, tighter lots near the Historic District, that setup tends to happen by default.",
+    serviceDetails: "Inquiries from Naperville often open with size, and we slow that down on purpose. We will tell you what a given puppy is likely to weigh grown, what that means for stairs and for a house with children, and which one is the steadiest fit rather than the smallest. Nothing gets reserved before that conversation has happened.",
+    deliveryInfo: "O'Hare International Airport is the usual arrival point, about thirty miles northeast of Naperville by way of I-88 and the Tri-State, closer to an hour if the timing lands inside a weekday rush. A flight nanny carries the puppy in cabin from Miami and meets you at the terminal, so the handoff and the drive home happen in one trip. Ground transport and private pickup in Miami Beach both stay open as alternatives.",
+    appointmentNote: "Families here often plan around the school calendar, and a puppy that lands in late June or over a long weekend gets the benefit of someone home all day. We hold a travel window open while you work the timing out.",
     ctaTitle: "Start a Naperville inquiry with questions first",
     ctaDescription: "Tell us about your house, your kids, and your week, and we will point you toward the puppy that suits a first-time home rather than the smallest one listed.",
     deliveryOptions: [
       {
         title: "Private Miami Beach Pickup",
-        desc: "Fly down, meet the puppy in person, and carry it home in cabin. Under three hours back into O'Hare makes this a single long day."
+        desc: "Fly down, meet the puppy in person, and carry it home in cabin. A little over three hours back into O'Hare makes this a single long day."
       },
       {
         title: "Flight Nanny Delivery",
-        desc: "A nanny holds the puppy in cabin from Miami into O'Hare and hands off at arrivals, usually before the afternoon traffic builds on I-88 heading west."
+        desc: "A nanny holds the puppy in cabin from Miami into O'Hare and hands off at arrivals, before the afternoon build on the Tri-State and I-88 west."
       },
       {
         title: "Ground Transport North",
         desc: "A two day drive from Miami Beach with overnight rest, arriving at your door in Naperville. No airport to navigate on a first dog's first day."
       }
     ],
-    careNote: "The double coat handles cold better than most people expect, so January is less about temperature than about depth and salt. A treated sidewalk on a Naperville cul-de-sac is hard on small paws, and snow that clears your ankle will bury a five pound dog, so keep outings short and shovel a clear patch by the door. Summer is the other half of the job: brush the undercoat out in spring, and walk the Riverwalk early rather than at four in the afternoon.",
+    careNote: "A Pomeranian's double coat helps in the cold, but a four pound dog has almost no mass to hold heat, so single digit January mornings and open wind across the western suburbs mean short outings, a sweater, and a shoveled patch by the door rather than a walk across the yard. Wipe or rinse the paws after any salted sidewalk or cul-de-sac, since de-icing salt burns small pads and gets licked off, and remember that snow clearing your ankle will bury a five pound dog. Summer here is humid as well as hot, so brush the undercoat out in spring, never shave it, and walk the Riverwalk early rather than at four in the afternoon.",
     whyLocal: [
-      "O'Hare sits about forty minutes northeast, an easy run up the tollway",
-      "Guidance written for first dogs, not for people who have owned toy breeds",
+      "O'Hare sits about thirty miles northeast, a straightforward run up the tollway",
+      "Coaching aimed at first dog households, not at experienced toy breed owners",
       "Honest adult weight estimates before anything is reserved, not after",
-      "Fenced suburban yards work once a sheltered winter relief spot is set",
-      "Arrival timed to school breaks, so someone is home the first week",
+      "Fenced DuPage County yards work once a sheltered winter relief spot is set",
+      "Arrival timed to Naperville school breaks, so someone is home the first week",
       "Every puppy vet checked in Miami Beach with age-appropriate vaccinations and a health certificate"
     ],
     nearbyAreas: [
       "Historic District",
       "Cress Creek",
       "White Eagle",
-      "Tall Grass",
       "Ashbury",
-      "Hobson West"
+      "Lisle",
+      "Wheaton"
     ],
     featuredPuppySlugs: [
       "luna-sable",
@@ -141,7 +141,7 @@ export const illinoisLocations: LocationEntry[] = [
       },
       {
         question: "What is the best month to bring a puppy to Naperville?",
-        answer: "Late spring through early fall keeps arrival day simplest, since winter delays and airline temperature rules stay out of it. That said, a January arrival is workable and has one quiet advantage for a first dog: the whole family is indoors, house training happens on your own floor, and the puppy learns the routine before it ever meets a snowbank."
+        answer: "Late spring through early fall keeps arrival day simplest, since snow delays and de-icing waits at O'Hare stay out of it. That said, a January arrival is workable and has one quiet advantage for a first dog: the whole family is indoors, house training happens on your own floor, and the puppy learns the routine before it ever meets a snowbank."
       },
       {
         question: "Can we see the puppy before we commit?",
