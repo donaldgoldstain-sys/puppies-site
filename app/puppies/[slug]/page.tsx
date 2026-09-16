@@ -3,6 +3,8 @@ import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { calculateAge, formatDate } from "@/lib/utils";
 import { PuppyDetail } from "@/components/puppy-detail";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbSchema, puppySchema } from "@/lib/schema";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -39,5 +41,19 @@ export default async function PuppyPage({ params }: Props) {
     .filter((entry) => entry.slug !== puppy.slug && (entry.colorSlug === puppy.colorSlug || entry.city === puppy.city))
     .slice(0, 3);
 
-  return <PuppyDetail puppy={puppy} dob={formatDate(puppy.birthDate)} age={calculateAge(puppy.birthDate)} similar={similar} />;
+  return (
+    <>
+      <JsonLd
+        data={[
+          puppySchema(puppy),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Available Puppies", path: "/available-puppies" },
+            { name: puppy.name }
+          ])
+        ]}
+      />
+      <PuppyDetail puppy={puppy} dob={formatDate(puppy.birthDate)} age={calculateAge(puppy.birthDate)} similar={similar} />
+    </>
+  );
 }

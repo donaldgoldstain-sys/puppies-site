@@ -4,7 +4,9 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { StickyBar } from "@/components/sticky-bar";
+import { JsonLd } from "@/components/json-ld";
 import { buildMetadata } from "@/lib/seo";
+import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -31,6 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>
       <body>
+        <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

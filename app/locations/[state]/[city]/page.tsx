@@ -7,6 +7,8 @@ import { TextSection, FaqAccordion, InfoCards, type InfoCardItem } from "@/compo
 import { PuppyGrid } from "@/components/puppy-grid";
 import { ContactForm } from "@/components/contact-form";
 import { PinIcon, PhoneIcon } from "@/components/icons";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbSchema, faqSchema, locationSchema } from "@/lib/schema";
 
 type Props = {
   params: Promise<{ state: string; city: string }>;
@@ -52,6 +54,17 @@ export default async function LocationPage({ params }: Props) {
 
   return (
     <div className="container">
+      <JsonLd
+        data={[
+          locationSchema(location),
+          faqSchema(location.faq),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Areas We Serve", path: "/areas-we-serve" },
+            { name: location.city }
+          ])
+        ]}
+      />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

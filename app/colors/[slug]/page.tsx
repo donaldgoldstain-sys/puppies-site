@@ -5,6 +5,8 @@ import { PawDivider, Breadcrumb } from "@/components/primitives";
 import { TextSection } from "@/components/page-blocks";
 import { PuppyGrid } from "@/components/puppy-grid";
 import { ContactForm } from "@/components/contact-form";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbSchema, colorSchema } from "@/lib/schema";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -41,6 +43,16 @@ export default async function ColorPage({ params }: Props) {
 
   return (
     <div className="container">
+      <JsonLd
+        data={[
+          colorSchema(color, related),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Colors", path: "/pomeranian-colors" },
+            { name: color.shortName }
+          ])
+        ]}
+      />
       <Breadcrumb
         items={[{ label: "Home", href: "/" }, { label: "Colors", href: "/pomeranian-colors" }, { label: color.shortName }]}
       />

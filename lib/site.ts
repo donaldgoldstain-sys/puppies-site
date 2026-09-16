@@ -12,6 +12,13 @@ export const site = {
   email: "concierge@teacuppomeranianpuppiesforsale.online",
   location: "Miami Beach, Florida",
   address: "6450 Collins Ave, Miami Beach, FL 33141",
+  postalAddress: {
+    street: "6450 Collins Ave",
+    city: "Miami Beach",
+    region: "FL",
+    postalCode: "33141",
+    country: "US"
+  },
   tagline: "Private placement guidance for teacup and micro Pomeranian families.",
   nav: [
     { href: "/", label: "Home" },

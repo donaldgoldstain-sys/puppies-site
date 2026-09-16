@@ -2,6 +2,8 @@ import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { Breadcrumb, PageHero } from "@/components/primitives";
 import { FaqAccordion, CtaPanel } from "@/components/page-blocks";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata = buildMetadata({
   title: "Pomeranian Puppy FAQ | Availability, Delivery and Care",
@@ -13,6 +15,7 @@ export const metadata = buildMetadata({
 export default function FAQPage() {
   return (
     <div className="container">
+      <JsonLd data={[faqSchema(site.faqs), breadcrumbSchema([{ name: "Home", path: "/" }, { name: "FAQ" }])]} />
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
       <PageHero
         eyebrow="FAQ"
