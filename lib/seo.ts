@@ -1,8 +1,17 @@
 import { Metadata } from "next";
 import { site } from "@/lib/site";
 
+// next.config sets `trailingSlash: true`, so every page URL we emit must carry
+// the slash to match the canonical Next.js renders. File routes keep their name.
 export function absoluteUrl(path = "/") {
-  return new URL(path, site.url).toString();
+  const url = new URL(path, site.url);
+  const isFile = /\.[^/]+$/.test(url.pathname);
+
+  if (!isFile && !url.pathname.endsWith("/")) {
+    url.pathname = `${url.pathname}/`;
+  }
+
+  return url.toString();
 }
 
 type MetadataInput = {
