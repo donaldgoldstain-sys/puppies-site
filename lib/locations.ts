@@ -61,10 +61,14 @@ const majorMarketSlugs = [
 ];
 
 // Same-state cities first, then the largest markets, so every page links onward.
+// Within a state the window rotates from the current city, so a ten-city state
+// spreads inbound links evenly instead of always pointing at the first six.
 export function nearbyCities(location: LocationEntry, limit = 6) {
-  const sameState = locations.filter(
-    (entry) => entry.stateSlug === location.stateSlug && entry.citySlug !== location.citySlug
-  );
+  const inState = locations.filter((entry) => entry.stateSlug === location.stateSlug);
+  const start = Math.max(inState.findIndex((entry) => entry.citySlug === location.citySlug), 0);
+  const sameState = Array.from({ length: inState.length - 1 }, (_, offset) => (
+    inState[(start + offset + 1) % inState.length]
+  ));
 
   if (sameState.length >= limit) {
     return sameState.slice(0, limit);
